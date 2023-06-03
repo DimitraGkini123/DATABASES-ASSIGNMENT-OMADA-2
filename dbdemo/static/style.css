@@ -1,1 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.main{
+    width: 100%;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url('library.jpg');
+    background-position: center;
+    background-size: cover;
+    height:109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    height: 75px;
+    float: left;
+}
+
+.logo{
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    height: 70px;
+    display: flex; /* Use display:flex instead of float:left */
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Move list-style here */
+    padding: 0; /* Add padding to remove default list padding */
+}
+
+ul li {
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    display: block; /* Add display:block to make the link clickable */
+    padding: 10px; /* Add padding to increase clickable area */
+}
+
+ul li a:hover {
+    color: #98ff98;
+}
+
+.search{
+    width: 330px;
+    margin-left:270px;
+    float: left;
+}
+
+.srch{
+    font-family:'Times New Roman';
+    width:200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #98ff98;
+    margin-top:13px;
+    color: #fff;
+    border-right: none ;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px ;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:#98ff98;
+    border: 2px solid #98ff98;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+/*this change the text "Your Virtual Library"*/
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+/*this change the text under "Your Virtual Library"*/
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial ;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(160, 231, 153, 0.8)50%,rgba(160,231,153,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #224d20;
+    font-size: 22px;
+    background-color: #98ff98;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #224d20 ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #224d20;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #224d20;
+    font-family: Arial;
+}
+
+#role {
+    margin-top: 20px; /* Adjust the value to move the field down */
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #224d20;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #024215;
+}
+
+
+
+.main_account{
+    width: 100%;
+    background:linear-gradient(to top,rgba(10, 63, 2, 0.5)50%,rgba(10, 63, 2, 0.5)50%);
+    background-position: center;
+    background-size: cover;
+    height:109vh;
+}
+
+.navbar_account{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+/*style for signup*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url('library.jpg');
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    background-color: #98ff98;
+    color: #224d20;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #224d20;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #224d20;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #224d20;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #ff7200;
+}
+
+
+/*style for the school-form*/
+.register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.register-form label.error {
+    color: red;
+    margin-top: 5px;
+}
+
+
+/*style for forgot-password*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.forgot-password-form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forgot-password-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.forgot-password-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.forgot-password-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+.add-book-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-book-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    background-color: #98ff98;
+    color: #224d20;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.add-book-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-book-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #224d20;
+}
+
+.add-book-form input[type="text"],
+.add-book-form input[type="number"],
+.add-book-form input[type="file"],
+.add-book-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-book-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #224d20;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-book-form button[type="submit"]:hover {
+    background-color: #fff;
+    color: #ff7200;
+}
+
+.library-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.library-button:hover {
+    color: #98ff98;
+}
+
+.library-button:active {
+    color: #98ff98;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url('library.jpg');
+}
+
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.search-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #98ff98;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.search-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #224d20;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Book List */
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white; /* Set font color to white */
+}
+
+.book-summary {
+    margin-bottom: 10px;
+    color: white; /* Set font color to white */
+}
+
+.book-details {
+    margin-bottom: 5px;
+    color: white; /* Set font color to white */
+}
+
+form {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: black; /* Set font color to white */
+}
+
+form p {
+    margin-bottom: 5px;
+    color: white; /* Set font color to white */
+}
+
+form label {
+    margin-right: 5px;
+    color: black; /* Set font color to white */
+}
+
+form input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p.no-books {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.update-book-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-book-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.update-book-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.update-book-form label {
+    font-weight: bold;
+}
+
+.update-book-form input[type="text"],
+.update-book-form input[type="number"],
+.update-book-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.update-book-form input[type="file"] {
+    display: none;
+}
+
+.update-book-form textarea {
+    height: 120px;
+}
+
+.update-book-form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-book-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.file-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file-input-label {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: white; /* Set white background for table fields */
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.action-button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.link-back {
+    color: white;
+    margin-right: 20px;
+}
+.link-back:hover {
+    color:#4CAF50;
+}
