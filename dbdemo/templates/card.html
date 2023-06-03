@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Card</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .card {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>User Card</h2>
+    
+    {% for user in users %}
+    <div class="card">
+        <h3>User ID: {{ user[0] }}</h3>
+        <p>First Name: {{ user[13] }}</p>
+        <p>Last Name: {{ user[14] }}</p>
+        <p>Username: {{ user[1] }}</p>
+        <p>School: {{ user[3] }}</p>
+        <p>Role: {{ user[10] }}</p>
+    </div>
+    {% endfor %}
+    <button onclick="printCard()">Print Card</button>
+    
+    <script>
+        function printCard() {
+            const cardContainer = document.body.innerHTML;
+            const printWindow = window.open('', '_blank');
+            printWindow.document.open();
+            printWindow.document.write('<html><head><title>User Card</title></head><body>');
+            printWindow.document.write(cardContainer);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manager's Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main_account">
+        <div class="navbar_account">
+        <div class="icon">
+            <h2 class="logo">biblioTECH</h2>
+            <a href="{{ url_for('index') }}" class="link-back">Back</a>
+        </div>
+
+            <div class="menu">
+                <form action="/add_book" method="POST">
+                    <ul>
+                        <li><a href="/user_school">Users</a></li>
+                        <li><a href="/user_approvals">User Approvals</a></li>
+                        <li><a href="/add_book">Add Book</a></li>
+                        <li><a href="/manager">My Account</a></li>
+                        <li><a href="/borrowing_approvals">Borrowing And Return Approvals</a></li>
+                        <li><a href="/reservation_approvals">Reservation Approvals</a></li>
+                        <li><a href="/review_approvals">Review Approvals</a></li>
+                    </ul>
+                </form>
+            </div>
+
+
+            
+            <div class="search-container">
+                <p class="search-text">Enter the details below to search for books :</p>
+        
+                <form action="/manager_search_books" method="post" class="search-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title" >
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Enter author" >
+            
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" placeholder="Enter category" >
+
+                <label for="copies">Available Copies:</label>
+                <input type="text" id="copies" name="copies" placeholder="Enter copies" >
+            
+                <button type="submit">Search</button>
+                </form>
+            </div>
+
+
+            <div class="search-container">
+                <p class="search-text">Enter the details below to search for books :</p>
+        
+                <form action="/user_with_delayed_book" method="post" class="search-form">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter first_name" >
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter last_name" >
+            
+                <label for="days">Days Of Delay:</label>
+                <input type="number" id="days" name="days" placeholder="Enter days" >
+            
+                <button type="submit">Search</button>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

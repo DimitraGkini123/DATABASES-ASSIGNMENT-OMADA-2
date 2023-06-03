@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="update-book-form">
+        <h2>Update Book</h2>
+        <form action="{{ url_for('update_books', isbn=isbn) }}" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="new_title">New Title:</label>
+                <input type="text" id="new_title" name="new_title">
+            </div>
+            <div>
+                <label for="new_publisher">New Publisher:</label>
+                <input type="text" id="new_publisher" name="new_publisher" >
+            </div>
+            <div>
+                <label for="new_num_of_pages">New Number of Pages:</label>
+                <input type="number" id="new_num_of_pages" name="new_num_of_pages">
+            </div>
+            <div>
+                <label for="new_summary">New Summary:</label>
+                <textarea id="new_summary" name="new_summary"></textarea>
+            </div>
+            <div>
+                <label for="new_cover_image">New Cover Image:</label>
+                <div class="file-input">
+                    <input type="file" id="new_cover_image" name="new_cover_image" >
+                </div>
+                <label class="file-input-label" for="new_cover_image">Choose File</label>
+            </div>
+            <div>
+                <label for="new_language">New Language:</label>
+                <input type="text" id="new_language" name="new_language" >
+            </div>
+            <div>
+                <label for="new_keywords">Keywords:</label>
+                <input type="text" id="new_keywords" name="new_keywords" >
+            </div>
+            <button type="submit">Update Book</button>
+        </form>
+    </div>
+</body>
+</html>

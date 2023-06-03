@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borrowing Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Borrowing Details</h2>
+    
+    <table>
+        <thead>
+            <a href="/process_login" class="link-back">Back</a>
+            
+            <a href="/delayed_borrows" class="link-back">Delayed Borrows</a>
+            <tr>
+                <th>ID</th>
+                <th>ISBN</th>
+                <th>Date of Borrow</th>
+                <th>Date of Return</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>Able to Borrow</th>
+                <th>Number Of Borrows</th>
+                <th>Avaliable Copies Of Book</th>
+                <th>Delayed Borrows</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for borrower in borrowers %}
+            <tr>
+                <td>{{ borrower[0] }}</td>
+                <td>{{ borrower[1] }}</td>
+                <td>{{ borrower[2] }}</td>
+                <td>{{ borrower[3] }}</td>
+                <td>{{ borrower[5] }}</td>
+                <td>{{ borrower[6] }}</td>
+                <td>{{ borrower[7] }}</td>
+                <td>{{ borrower[8] }}</td>
+                <td>{{ borrower[9] }}</td>
+                <td>{{ borrower[10] }}</td>
+                <td>{{ borrower[11] }}</td>
+            </tr>
+            <td>
+                {% if borrower[3] is none %}
+                <form action="/approved_b/{{ borrower[1] }}/{{ borrower[7] }}/{{ borrower[0]}}" method="POST">
+                    <input type="hidden" name="action" value="approve">
+                    <button type="submit">Approve</button>
+                </form>
+                {% endif %}
+            </td>
+            <td>
+                {% if borrower[3] is none %}
+                <form action="/rejected_b/{{ borrower[1] }}/{{ borrower[7] }}/{{ borrower[0]}}" method="POST">
+                    <input type="hidden" name="action" value="reject">
+                    <button type="submit">Reject</button>
+                </form>
+                {% endif %}
+            </td>
+            <td>
+                {% if borrower[3] is none %}
+                <form action="/waiting_b/{{ borrower[1] }}/{{ borrower[7] }}/{{ borrower[0]}}" method="POST">
+                    <input type="hidden" name="action" value="waiting">
+                    <button type="submit">Waiting</button>
+                </form>
+                {% endif %}
+            </td>
+            <td>
+                {% if borrower[3] is not none %}
+                <form action="/approve_return/{{ borrower[1] }}/{{ borrower[7] }}/{{ borrower[0]}}" method="POST">
+                    <input type="hidden" name="action" value="return">
+                    <button type="submit">Register Return</button>
+                </form>
+                {% endif %}
+            </td>
+            <td>
+                {% if borrower[3] is not none %}
+                <form action="/do_not_approve_return/{{ borrower[1] }}/{{ borrower[7] }}/{{ borrower[0]}}" method="POST">
+                    <input type="hidden" name="action" value="do_not_return">
+                    <button type="submit">Do Not Register Return</button>
+                </form>
+                {% endif %}
+            </td>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

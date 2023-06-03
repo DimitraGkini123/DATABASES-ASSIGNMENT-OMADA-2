@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form  action="/authors_5_books"></form>
+    {% if authors %}
+    <h2>Authors who have written at least 5 books less than the author with the most books</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Author Name</th>
+                <th>Number Of books</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for author in authors %}
+            <tr>
+                <td>{{ author[0]}}</td>
+                <td>{{ author[1]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </table>
+    {% else %}
+        <p>No authors found.</p>
+    {% endif %}

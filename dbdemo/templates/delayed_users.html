@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users With At Least One Delay</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form  action="/young_teachers"></form>
+    {% if users %}
+    <h2>Users With At Least One Delay</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th> ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ISBN</th>
+                <th>Days Of Delay</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[3] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[4] }}</td>
+                <td>{{ user[0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No found.</p>
+    {% endif %}
+</body>
+</html>

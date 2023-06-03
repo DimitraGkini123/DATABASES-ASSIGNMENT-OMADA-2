@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Young Teachers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form  action="/young_teachers"></form>
+    {% if teachers %}
+    <h2>Young Teachers</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th> ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>School</th>
+                <th>Number Of Borrows</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            {% for teacher in teachers %}
+            <tr>
+                <td>{{ teacher[0]}}</td>
+                <td>{{ teacher[1]}}</td>
+                <td>{{ teacher[2] }}</td>
+                <td>{{ teacher[3] }}</td>
+                <td>{{ teacher[4] }}</td>
+                <td>{{ teacher[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No found.</p>
+    {% endif %}
+</body>
+</html>

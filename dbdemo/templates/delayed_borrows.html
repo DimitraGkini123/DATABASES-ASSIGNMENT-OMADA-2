@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delayed Borrows</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Delayed Borrows</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ISBN</th>
+                <th>Date of Borrow</th>
+                <th>Date of Return</th>
+                <th>Situation</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>Days of Delay</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for borrow in delayed_borrows %}
+            <tr>
+                <td>{{ borrow[0] }}</td>
+                <td>{{ borrow[1] }}</td>
+                <td>{{ borrow[2] }}</td>
+                <td>{{ borrow[3] }}</td>
+                <td>{{ borrow[4] }}</td>
+                <td>{{ borrow[5] }}</td>
+                <td>{{ borrow[6] }}</td>
+                <td>{{ borrow[7] }}</td>
+                <td>{{ borrow[8] }}</td>
+            </tr>
+            
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/borrowing_approvals" class="link-back">Back</a>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<a href="/process_login" class="link-back">Back</a>
+<body>
+    <div class="add-book-form">
+        <h2>Add Book</h2>
+        <form action="/add_book" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="publisher">Publisher:</label>
+                <input type="text" id="publisher" name="publisher" required>
+            </div>
+            <div>
+                <label for="ISBN">ISBN:</label>
+                <input type="text" id="ISBN" name="ISBN" required>
+            </div>
+            <div>
+                <label for="num_of_pages">Number of Pages:</label>
+                <input type="number" id="num_of_pages" name="num_of_pages" required>
+            </div>
+            <div>
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" required></textarea>
+            </div>
+            <div>
+                <label for="cover_image">Cover Image:</label>
+                <input type="file" id="cover_image" name="cover_image" required>
+            </div>
+            <div>
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="language" required>
+            </div>
+            <div>
+                <label for="keywords">Keywords:</label>
+                <input type="text" id="keywords" name="keywords" required>
+            </div>
+            <div>
+                <label for="copies">Copies:</label>
+                <input type="number" id="copies" name="copies" required>
+            </div>
+            <div>
+                <label for="authors">Authors:</label>
+                <input type="text" id="authors" name="authors" required>
+            </div>
+            <div>
+                <label for="categories">Categories:</label>
+                <input type="text" id="categories" name="categories" required>
+            </div>
+            <div>
+                <label for="school_name">School Name:</label>
+                <input type="text" id="school_name" name="school_name" required>
+            </div>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>

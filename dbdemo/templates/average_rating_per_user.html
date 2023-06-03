@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manager Average Rating</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        h3 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Manager Average Rating</h2>
+    {% if users %}
+        <h3>Average Rating per User and Category</h3>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Category</th>
+                <th>Average Rating</th>
+            </tr>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No data available.</p>
+    {% endif %}
+</body>
+</html>

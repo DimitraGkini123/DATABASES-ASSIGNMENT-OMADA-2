@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Reservations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% if reservations %}
+        <h2>My Reservations </h2>
+        <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>ISBN</th>
+                <th>Date of Reservation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reservation in reservations %}
+                <tr>
+                    <td>{{ reservation[1] }}</td>
+                    <td>{{ reservation[0] }}</td>
+                    <td>{{ reservation[2] }}</td>
+                    <td>{{ reservation[3] }}</td>
+                    <td>{{ reservation[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No reservations found.</p>
+{% endif %}
+</body>
+</html>
+
+<!--
+<body>
+    {% if reservations %}
+        <h2>Search Results</h2>
+        <div class="my_borrows">
+            {% for reservation in reservations %}
+                <div class="borrow">
+                    <div class="book-info">
+                        <h3 class="book-title">{{ reservation[1] }}</h3>
+                        <p class="book-details">ISBN: {{ reservation[0] }}</p>
+                        <p class="book-details">date_of_borrow: {{ reservation[2] }}</p>
+                        <p class="book-details">date_of_return: {{ reservation[3] }}</p>
+                        <p class="book-details">situation: {{ reservation[4] }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No reservations found.</p>
+    {% endif %}
+</body>
+</html>
+
+-->

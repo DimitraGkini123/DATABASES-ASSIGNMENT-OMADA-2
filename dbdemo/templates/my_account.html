@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main_account">
+        <div class="navbar_account">
+            <div class="icon">
+                <h2 class="logo">biblioTECH</h2>
+            </div>
+
+            
+            <div class="content">
+                {% if role == 'student' %}
+                    <h1>Welcome, {{ user_data.first_name }}!</h1>
+                
+                    <div class="personal_info">
+                        <h2 style="text-align: center;">Personal Information</h2>
+                        <p><strong>Username:</strong> {{ user_data.username }}</p>
+                        <p><strong>Password:</strong> {{ user_data.password }}</p>
+                        <p><strong>School Name:</strong> {{ user_data.school_name }}</p>
+                        <p><strong>Date of Birth:</strong> {{ user_data.date_of_birth }}</p>
+                        <p><strong>First Name:</strong> {{ user_data.first_name }}</p>
+                        <p><strong>Last Name:</strong> {{ user_data.last_name }}</p>
+                    </div>
+
+                    <a href="/student_change_password">Want to change your password?</a>
+                
+                {% elif role == 'teacher' %}
+                
+                    <h1>Welcome, {{ user_data.first_name }}!</h1>
+    
+                    <div class="personal_info">
+                        <h2>Personal Information</h2>
+                        <p><strong>Username:</strong> {{ user_data.username }}</p>
+                        <p><strong>Password:</strong> {{ user_data.password }}</p>
+                        <p><strong>School Name:</strong> {{ user_data.school_name }}</p>
+                        <p><strong>Date of Birth:</strong> {{ user_data.date_of_birth }}</p>
+                        <p><strong>First Name:</strong> {{ user_data.first_name }}</p>
+                        <p><strong>Last Name:</strong> {{ user_data.last_name }}</p>
+                    </div>
+                    <a href="/teacher_change_password">Want to change your password?</a><br>
+                    <a href="/teacher_change_data">Want to edit your personal data?</a>
+
+                {% elif role == 'manager' %}
+
+                    <h1>Welcome, {{ user_data.first_name }}!</h1>
+            
+                    <div class="personal_info">
+                        <h2>Personal Information</h2>
+                        <p><strong>Username:</strong> {{ user_data.username }}</p>
+                        <p><strong>Password:</strong> {{ user_data.password }}</p>
+                        <p><strong>School Name:</strong> {{ user_data.school_name }}</p>
+                        <p><strong>Date of Birth:</strong> {{ user_data.date_of_birth }}</p>
+                        <p><strong>First Name:</strong> {{ user_data.first_name }}</p>
+                        <p><strong>Last Name:</strong> {{ user_data.last_name }}</p>
+                    </div>
+                    <a href="/manager_change_password">Want to change your password?</a>
+                
+                {%elif role == 'admin'%}
+                
+                    <h1>Welcome, Administrator!</h1>
+    
+                    <div class="personal_info">
+                        <h2>Personal Information</h2>
+                        <p><strong>ID:</strong> {{ user_data.id }}</p>
+                        <p><strong>Username:</strong> {{ user_data.username}}</p>
+                        <p><strong>Password:</strong> {{ user_data.password }}</p>
+                    </div>
+                {% endif %}
+
+            
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

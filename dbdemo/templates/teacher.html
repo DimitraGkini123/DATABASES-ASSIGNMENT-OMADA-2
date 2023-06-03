@@ -1,28 +1,29 @@
-<!-- student.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Student's Account</title>
+    <title>Teacher's Account</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="main_account">
         <div class="navbar_account">
-            <div class="icon">
-                <h2 class="logo">biblioTECH</h2>
-                <a href="{{ url_for('index') }}" class="link-back">Back</a>
-            </div>
+        <div class="icon">
+            <h2 class="logo">biblioTECH</h2>
+            <a href="{{ url_for('index') }}" class="link-back">Back</a>
+        </div>
 
             <div class="menu">
                 <ul>
                     <li><a href="/my_reservations">Reservations</a></li>
                     <li><a href="/my_borrows">Borrows</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="/student">My Account</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="/teacher">My Account</a></li>
                 </ul>
             </div>
             
+        
 
+            
             <div class="search-container">
                 <p class="search-text">Enter the details below to search for books :</p>
         
@@ -39,8 +40,8 @@
                 <button type="submit">Search</button>
                 </form>
             </div>
-            
         </div>
     </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

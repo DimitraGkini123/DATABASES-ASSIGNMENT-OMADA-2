@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form  action="/manager_borrowing"></form>
+    {% if managers %}
+    <h2>Managers with the same amount of books (more than 20) in one year</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>First Name</th>
+                <th>Number of Borrows</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for manager in managers %}
+            <tr>
+                <td>{{manager[0]}}</td>
+                <td>{{manager[1]}}</td>
+                <td>{{manager[2]}}</td>
+                <td>{{manager[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </table>
+    {% else %}
+        <p>No managers found.</p>
+    {% endif %}

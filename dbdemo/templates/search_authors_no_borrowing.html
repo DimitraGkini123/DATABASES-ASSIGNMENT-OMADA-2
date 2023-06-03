@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form  action="/search_authors_no_borrowing"></form>
+    {% if authors %}
+    <h2>Authors That None Of Their Books Have Been Borrowed</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Author Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for author in authors %}
+            <tr>
+                <td>{{ author[0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No authors found.</p>
+    {% endif %}
+</body>

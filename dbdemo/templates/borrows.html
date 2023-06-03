@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Borrows</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+        <h2>My Borrows </h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Date of Borrow</th>
+            <th>Date of Return</th>
+            <th>Situation</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for borrow in borrows %}
+        <tr>
+            <td>{{ borrow[1] }}</td>
+            <td>{{ borrow[0] }}</td>
+            <td>{{ borrow[2] }}</td>
+            <td>{{ borrow[3] }}</td>
+            <td>{{ borrow[4] }}</td>
+        </tr>
+        <td>
+            {% if (borrow[4] != 'returned') and (borrow[4] != 'delayed') and (borrow[4] != 'waiting') and (borrow[3] is none) %}
+            <form action="/return_book/{{borrow[0]}}" method="POST">
+                <input type="hidden" name="action" value="return">
+                <button type="submit">Return</button>
+            </form>
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

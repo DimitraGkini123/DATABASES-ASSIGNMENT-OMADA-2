@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Approvals</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Review Approvals</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>School Name</th>
+                <th>ISBN</th>
+                <th>Rating</th>
+                <th>Free Text</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in reviews %}
+            <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[5] }}</td>
+                <td>{{ record[6] }}</td>
+                <td>{{ record[7] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+            </tr>
+            <td>
+                <form action="/approve_review/{{ record[7] }}/{{ record[0] }}/{{record[1]}}" method="POST">
+                    <input type="hidden" name="action" value="approve">
+                    <button type="submit">Approve</button>
+                </form>
+            </td>
+            <td>
+                <form action="/approve_review/{{ record[7] }}/{{ record[0] }}/{{record[1]}}" method="POST">
+                    <input type="hidden" name="action" value="reject">
+                    <button type="submit">Reject</button>
+                </form>
+            </td>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

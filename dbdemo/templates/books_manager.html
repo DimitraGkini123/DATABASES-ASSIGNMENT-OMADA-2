@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<a href="/process_login" class="link-back">Back</a>
+<body>
+    {% if books %}
+        <h2>Search Results</h2>
+        <div class="book-list">
+            <form action="/books" method="post">
+                {% for book in books %}
+                    <div class="book">
+                        <img class="book-image" src="data:image/jpeg;base64,{{ book[5]|custom_b64encode }}" alt="Book Image">
+                        <div class="book-info">
+                            <h3 class="book-title">{{ book[1] }}</h3>
+                            <p class="book-details">ISBN: {{ book[0] }}</p>
+                            <p class="book-details">Publisher: {{ book[2] }}</p>
+                            <p class="book-details">Number of Pages: {{ book[3] }}</p>
+                            <p class="book-details">Language: {{ book[6] }}</p>
+                            <p class="book-details">Keywords: {{ book[7] }}</p>
+                            <p class="book-details">Available copies: {{ book[8] }}</p>
+                            <p class="book-summary">{{ book[4] }}</p>
+                            <a href="{{ url_for('update_books', isbn=book[0]) }}" class="update-button">Update Book</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </form>
+        </div>
+    {% else %}
+        <p>No books found.</p>
+    {% endif %}
+</body>
+</html>

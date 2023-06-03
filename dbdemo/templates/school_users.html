@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>School: {{ school_name }}</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>School</th>
+                <th>Role</th>
+                <th>Delete User</th>
+                <th>Print Card</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[0]}}</td>
+                <td>{{ user[13]}}</td>
+                <td>{{ user[14] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[3] }}</td>
+                <td>{{ user[10] }}</td>
+                <td>
+                    <form action="/delete_user/{{ user[3] }}/{{ user[1] }}" method="POST">
+                        <input type="hidden" name="action" value="delete">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/print_card/{{ user[0] }}" method="POST">
+                        <input type="hidden" name="action" value="print_card">
+                        <button type="submit">See Card</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

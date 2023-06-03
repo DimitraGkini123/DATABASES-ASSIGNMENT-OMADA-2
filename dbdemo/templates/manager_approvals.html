@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Managers That Want To Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Managers That Want To Sign Up</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Manager ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>School Name</th>
+                <th>Username</th>
+                <th>Date Of Birth</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for manager in managers %}
+                <tr>
+                    <td>{{ manager[0] }}</td>
+                    <td>{{ manager[9] }}</td>
+                    <td>{{ manager[10] }}</td>
+                    <td>{{ manager[8] }}</td>
+                    <td>{{ manager[1] }}</td>
+                    <td>{{ manager[11] }}</td>
+                    <td>
+                        <form action="/approve_manager/{{manager[8]}}/{{manager[9]}}" method="POST">
+                            <input type="hidden" name="action" value="approve">
+                            <button type="submit">Approve</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/approve_manager/{{manager[8]}}/{{manager[9]}}" method="POST">
+                            <input type="hidden" name="action" value="reject">
+                            <button type="submit">Reject</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
