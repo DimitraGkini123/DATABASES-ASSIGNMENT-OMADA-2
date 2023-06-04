@@ -1,0 +1,993 @@
+INSERT INTO school (school_name, school_address, email, city, principal_name, phone_number)
+VALUES ('18o Gel Triandrias', 'Ethnikis Antistasews', '18o@hotmail.com', 'Thessaloniki', 'Petros Piliouris', 2319876543);
+
+INSERT INTO school (school_name, school_address, email, city, principal_name, phone_number)
+VALUES ('1o Gel Halandriou', 'Diogenous 2', '1ogel@gmail.com', 'Athens', 'Nikos Petridis', 2106196365);
+
+INSERT INTO school (school_name, school_address, email, city, principal_name, phone_number)
+VALUES ('2o Gel Thivas', 'Aulidos 2', '2ogel@gmail.com', 'Thiva', 'Koutsikos', 2262087615);
+
+INSERT INTO school (school_name, school_address, email, city, principal_name, phone_number)
+VALUES ('7o Gymnasio Haniwn', 'Nikhs 128', '7ο@gmail.com', 'Crete', 'Apostolos Mavrovirogianakis', 2821457209);
+
+INSERT INTO admin(ID,Username,password,school_name) VALUES(0,'administrator','000','18o Gel Triandrias');
+INSERT INTO admin(ID,Username,password,school_name) VALUES(0,'administrator','000','1o Gel Halandriou');
+INSERT INTO admin(ID,Username,password,school_name) VALUES(0,'administrator','000','2o Gel Thivas');
+INSERT INTO admin(ID,Username,password,school_name) VALUES(0,'administrator','000','7o Gymnasio Haniwn');
+
+INSERT INTO manager(ID, Username, Password, approve_manager, approve_user_registration, approve_student_review, approve_borrowing, approve_reservation, school_name, first_name, last_name, date_of_birth)
+VALUES (7, 'MarM', '123', 1, 1, NULL, NULL, NULL, '7o Gymnasio Haniwn', 'Marianthi', 'Metaxaki', '1980-09-26');
+
+INSERT INTO manager(ID, Username, Password, approve_manager, approve_user_registration, approve_student_review, approve_borrowing, approve_reservation, school_name, first_name, last_name, date_of_birth)
+VALUES (8, 'dimitra', '456', 1, 1, NULL, NULL, NULL, '1o Gel Halandriou', 'Dimitra', 'Gini', '1983-06-27');
+
+INSERT INTO manager(ID, Username, Password, approve_manager, approve_user_registration, approve_student_review, approve_borrowing, approve_reservation, school_name, first_name, last_name, date_of_birth)
+VALUES (9, 'Helen', '789', 1, 1, NULL, NULL, NULL, '2o Gel Thivas', 'Eleni', 'Sabani', '1988-03-27');
+
+INSERT INTO manager (ID, Username, Password, approve_manager, approve_user_registration, approve_student_review, approve_borrowing, approve_reservation, school_name, first_name, last_name, date_of_birth)
+VALUES (11, 'petran', '567', 1, 1, NULL, NULL, NULL, '18o Gel Triandrias', 'Petros', 'Piliouris', '1997-03-01');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978006025665', 'Where the Wild Things Are', 'HarperCollins', 48, 'This children''s picture book tells the imaginative story of Max, a mischievous boy who journeys to an island of wild creatures.', 1, 'English', 'Childrens, Picture Book, Imagination', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978006028075', 'The Giver', 'HMH Books for Young Readers', 240, 'In a seemingly perfect society, Jonas discovers the dark secrets behind his utopian world, challenging the status quo and questioning the true meaning of freedom and choice.', 1, 'English', 'Dystopian, Coming-of-age', 4, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978014044929', 'The Republic', 'Penguin Classics', 416, '"The Republic" is a philosophical work by Plato, exploring topics such as justice, governance, and the ideal society. It offers insights into ancient Greek philosophy and political thought.', 1, 'English', 'Philosophy, Justice, Governance, Ideal Society, Ancient Greek', 2, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978047089452', 'Mathematical Mindsets', 'Jossey-Bass', 288, '"Mathematical Mindsets" explores the concept of developing a growth mindset in mathematics education, providing strategies and techniques to help students embrace challenges and develop a positive attitude towards math.', 1, 'English', 'Mathematics Education, Growth Mindset, Teaching', 8, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978054757731','The Odyssey','Mariner Books',550,'An epic poem attributed to Homer, following the adventures of Odysseus as he attempts to return home after the Trojan War, facing mythical creatures and overcoming obstacles.', 1, 'Ancient Greek', 'Classics, Mythology, Epic',7 ,'18o Gel Triandrias')
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978069115514','The Elements of Euclid','Princeton University Press',850,'"Euclid's Elements" is a foundational mathematical work, providing a comprehensive introduction to geometry. It presents a systematic approach to mathematical proofs and concepts.', 1, 'English', 'Mathematics, Geometry, Mathematical Proofs, Euclidean Geometry',4 ,'7o Gymnasio Haniwn')
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780038026756','French: Discovering French, Nouveau!','This French language textbook is designed for students learning French as a second language. It covers vocabulary, grammar, listening comprehension, and speaking skills, offering engaging activities and cultural insights.', 1, 'French', 'School Book, French Language, Language Learning, Vocabulary',1 ,'2o Gel Thivas')
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780060732592', 'Ariel: The Restored Edition', 'Harper Perennial Modern Classics', 224, 'Ariel is a collection of poems by Sylvia Plath. The collection, published posthumously, showcases Plaths powerful and evocative poetic voice as she explores themes of identity, femininity, and the complexities of human emotions.', 1, 'English', 'Confessional Poetry, Identity, Feminism', 6, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780060750503', 'The Love Poems of Rumi', 'HarperOne', 240, 'The Love Poems of Rumi is a collection of poems by the renowned Persian poet Rumi. These poems explore themes of love, spirituality, and the souls journey towards union with the divine.', 1, 'English (translated)', 'Sufi Poetry, Love, Spirituality', 8, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780060838652', "A People\'s History of the United States", 'Harper Perennial', 729, "A People\'s History of the United States presents a different perspective on American history, highlighting the experiences and struggles of marginalized groups, including Native Americans, African Americans, and women.", 1, 'English', 'U.S. History, Social History, Marginalized Groups', 17, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780061120080', 'The Alchemy of Air', 'Broadway Books', 336, 'The Alchemy of Air explores the fascinating story of the Haber-Bosch process, a scientific discovery that revolutionized the production of fertilizers and synthetic materials. Thomas Hager delves into the lives of Fritz Haber and Carl Bosch, the scientists behind this discovery, and its profound impact on agriculture and society.', 1, 'English', 'Chemistry, History of Science, Fertilizers, Haber-Bosch Process', 5, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780061122415', 'To Kill a Mockingbird', 'Harper Perennial', 336, 'Set in the 1930s, this Pulitzer Prize-winning novel explores racial injustice and the loss of innocence through the eyes of Scout Finch.', 1, 'English', 'Fiction, Classics, Racism', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780061122415', 'To Kill a Mockingbird', 'Harper Perennial', 336, 'Set in the 1930s, this Pulitzer Prize-winning novel explores racial injustice and the loss of innocence through the eyes of Scout Finch.', 1, 'English', 'Fiction, Classics, Racism', 11, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780061122415', 'To Kill a Mockingbird', 'Harper Perennial', 336, 'Set in the 1930s, this Pulitzer Prize-winning novel explores racial injustice and the loss of innocence through the eyes of Scout Finch.', 1, 'English', 'Fiction, Classics, Racism', 11, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780061122415', 'To Kill a Mockingbird', 'Harper Perennial', 336, 'Set in the 1930s, this Pulitzer Prize-winning novel explores racial injustice and the loss of innocence through the eyes of Scout Finch.', 1, 'English', 'Fiction, Classics, Racism', 7, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780062316097', 'Sapiens: A Brief History of Humankind', 'Harper Perennial', 996, '"Sapiens" offers a thought-provoking exploration of the history of humankind, from the emergence of Homo sapiens to the present day. Drawing on a wide range of disciplines, including anthropology, biology, and history, Yuval Noah Harari provides insights into the development and impact of our species.', 1, 'English', 'Anthropology, History, Science, Human Evolution', 5, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780062509598', 'The Essential Rumi', 'HarperOne', 416, '"The Essential Rumi" is a collection of poems by the Persian poet Jalaluddin Rumi, translated by Coleman Barks. Rumi\'s poetry explores themes of love, spirituality, and the pursuit of truth, offering timeless wisdom and insights.', 1, 'English', 'Sufism, Spirituality, Love, Mysticism, Wisdom, Enlightenment.', 5, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780071315012', 'Discrete Mathematics and Its Applications', 'McGraw-Hill Education', 972, 'This book explores various topics in discrete mathematics, including logic, sets, functions, algorithms, and graph theory, providing a theoretical foundation for computer science and mathematics.', 1, 'English', 'Discrete Mathematics, Mathematics, Logic, Sets, Algorithms', 3, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780078021756', 'Economics: Principles, Problems, and Policies', 'McGraw-Hill Education', 864, 'This economics textbook introduces fundamental economic concepts and principles. It covers topics such as supply and demand, market structures, macroeconomics, and international trade, providing real-world examples and economic analysis.', 1, 'English', 'School Book, Economics, Principles, Policies, Macroeconomics', 5, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780078245836', 'Geography: The World and Its People', 'Glencoe/McGraw-Hill', 912, 'This biology textbook introduces students to the fundamental principles and concepts of biology. It explores topics such as cell structure, genetics, evolution, and ecology, fostering a deep understanding of the living world.', 1, 'English', 'School Book, Geography, World Geography, Cultures', 2, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780078745607', 'Geography', 'Glencoe/McGraw-Hill', 728, 'This geography textbook offers a comprehensive exploration of the world\s regions, physical landscapes, and human interactions. It covers topics such as climate, culture, population, and economic systems, providing maps, photographs, and case studies.', 1, 'English', 'School Book, Geography, World Geography, Physical Landscapes', 3, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780078746376', 'Chemistry: Matter and Change', 'McGraw-Hill Education', 996, 'This chemistry textbook provides a comprehensive introduction to the principles and applications of chemistry. It covers topics such as atomic structure, chemical reactions, and organic chemistry, offering hands-on experiments and problem-solving exercises.', 1, 'English', 'School Book, Chemistry, Science, Matter, Reactions', 7, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780078772375', 'Chemistry for Junior High School', 'McGraw-Hill Education', 400, 'Chemistry for Junior High School" is a comprehensive textbook that introduces basic concepts of chemistry. It covers topics such as matter, elements, compounds, chemical reactions, and the periodic table. The book includes experiments, illustrations, and review questions to enhance learning.', 1, 'English', 'Chemistry, Textbook, Junior High School, Matter, Elements, Compounds, Chemical Reactions, Periodic Table', 5, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780131481930', 'Introduction to Environmental Engineering and Science', 'Pearson', 729, 'This introductory textbook explores the principles and applications of environmental engineering and science. It covers topics such as water and wastewater treatment, air pollution control, solid waste management, and sustainability, providing engineering solutions and case studies.', 1, 'English', 'School Book, Environmental Engineering, Environmental Science, Sustainability', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978013401127', 'Environmental Science: Toward a Sustainable Future', 'Pearson', 672, 'This environmental science textbook explores the interconnections between humans and the environment. It covers topics such as ecosystems, biodiversity, pollution, and sustainable development, providing case studies and practical solutions.', 1, 'English', 'School Book, Environmental Science, Sustainability, Ecosystems', 6, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780134065455', 'Biology: Concepts and Connections', 'Pearson', 896, 'This biology textbook introduces students to the fundamental principles and concepts of biology. It explores topics such as cell structure, genetics, evolution, and ecology, fostering a deep understanding of the living world.', 1, 'English', 'School Book, Biology, Science, Cell Structure, Genetics', 8, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140275360', 'Iliad', 'Penguin Classics', 704, 'Iliad" is an ancient Greek epic poem attributed to Homer. It tells the story of the Trojan War, focusing on the events surrounding the Greek hero Achilles. The poem explores themes of honor, glory, fate, and the consequences of war. It is a foundational work of Western literature and a testament to the power of storytelling.', 1, 'Ancient Greek', 'Classics, Epic, Greek Mythology, War', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140421996', 'Leaves of Grass', 'Penguin Classics', 704, '"Leaves of Grass" is a groundbreaking collection of poetry by Walt Whitman. Celebrated for its boldness and celebration of individualism, this influential work explores themes of nature, democracy, and the human experience.', 1, 'English', 'Poetry, American Literature, Transcendentalism', 6, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140441185', 'Thus Spoke Zarathustra', 'Penguin Classics', 352, '"Thus Spoke Zarathustra" is a philosophical novel by Friedrich Nietzsche. It presents a series of poetic and philosophical discourses through the character of Zarathustra, exploring themes such as the death of God, the will to power, and the nature of human existence.', 1, 'English', 'Philosophy, Existentialism, Nietzsche, Poetic Prose', 9, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140443161', 'Meditations', 'Penguin Classics', 304, '"Meditations" is a collection of personal writings by Marcus Aurelius, a Roman emperor and philosopher. It offers reflections on topics such as self-improvement, virtue, and stoicism.', 1, 'English', 'Philosophy, Stoicism, Self-Improvement, Virtue, Ancient Roman Philosophy', 4, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('978014044929', 'The Republic', 'Penguin Classics', 416, '"The Republic" is a foundational work of Western philosophy by Plato. It presents a dialogue between Socrates and other characters, discussing topics such as justice, morality, the ideal state, and the nature of knowledge. The book explores the concept of an ideal society and the role of philosophy in governance.', 1, 'English', 'Philosophy, Plato, Ethics, Ideal Society', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140449334', 'Meditations', 'Penguin Classics', 304, '"Meditations" is a collection of personal writings by Roman Emperor Marcus Aurelius. It offers reflections on Stoic philosophy, providing insights into ethics, self-improvement, and the nature of the universe. The book encourages introspection and the pursuit of wisdom.', 1, 'English', 'Philosophy, Stoicism, Ethics, Self-Reflection', 8, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780140449491', 'The Nicomachean Ethics', 'Penguin Classics', 583, '"The Nicomachean Ethics" is one of Aristotle\s most famous works on ethics. In this philosophical treatise, Aristotle explores the nature of ethics and the pursuit of happiness. He delves into various topics such as moral virtue, character development, the concept of eudaimonia (flourishing or living well), and the role of reason in ethical decision-making. The book consists of ten books, each addressing different aspects of ethics and human conduct. It remains a cornerstone in the field of ethics and has influenced philosophical thought for centuries.', 1, 'Ancient Greek', 'Fiction, Adventure, Childhood, Mississippi River, American Literature', 7, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780141198975', 'The Raven and Other Poems', 'Penguin Classics', 96, '"The Raven and Other Poems" is a collection of poems by Edgar Allan Poe. It includes his famous poem "The Raven" along with other dark and atmospheric works that explore themes of death, love, and the supernatural.', 1, 'English', 'Gothic Poetry, Death, Supernatural', 2, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780142402511', 'Looking for Alaska', 'Dutton Juvenile', 221, '"Looking for Alaska" is a coming-of-age novel that follows the story of Miles Halter as he enrolls in a boarding school and embarks on a journey of self-discovery. He befriends a group of unique and enigmatic individuals, including the captivating Alaska Young. The book explores themes of friendship, love, loss, and the pursuit of meaning.', 1, 'English', 'Fiction, Young Adult, Coming-of-Age, Friendship, Love', 6, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780142407332', 'The Outsiders', 'Speak', 192, 'This coming-of-age novel follows the rivalry between two teenage gangs, the Greasers and the Socs, and explores themes of social class and identity.', 1, 'English', 'Fiction, Young Adult, Coming-of-age', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780142437315', 'The Waste Land and Other Poems', 'Penguin Classics', 176, '"The Waste Land and Other Poems" is a seminal collection of poetry by T.S. Eliot. The book includes Eliot\s famous poem "The Waste Land," along with other notable works that explore themes of disillusionment, despair, and the fragmented nature of modern life.', 1, 'English', 'Poetry, Modernism, Literary Classic', 2, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780143036531', 'The Omnivore\s Dilemma: A Natural History of Four', 'Michael Pollan', 450, 'Exploring the complex web of choices surrounding our food, this book examines the implications of industrial farming, organic food, and alternative food systems.', 1, 'English', 'Food, Agriculture', 4, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780192833753', 'The Homeric Hymns', 'Oxford University Press', 192, '"The Homeric Hymns" is a collection of ancient Greek hymns attributed to Homer. These hymns were composed to honor various gods and goddesses of Greek mythology, including Zeus, Apollo, Aphrodite, and Demeter. They provide insights into the religious beliefs and practices of the ancient Greeks.', 1, 'Ancient Greek', 'Mythology, Ancient Literature, Poetry', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780199129593', 'Mathematics: A Complete Course', 'Oxford University Press', 480, '"Mathematics: A Complete Course" is a comprehensive textbook that covers various topics in mathematics, including algebra, geometry, trigonometry, and calculus. It provides clear explanations, examples, and practice problems to help students develop their mathematical skills.', 1, 'English', 'Mathematics, Textbook, Algebra, Geometry, Trigonometry, Calculus', 10, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780199537259', 'The Metamorphoses', 'Oxford University Press', 768, '"The Metamorphoses" is a narrative poem by Ovid, featuring mythical tales of transformation from Greek and Roman mythology. It explores themes of love, mythology, and the human condition.', 1, 'English', 'Mythology, Poetry, Greek Mythology, Roman Mythology, Transformation', 8, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780199537532', 'The Symposium', 'Oxford University Press', 160, '"The Symposium" is a philosophical dialogue by Plato, exploring the nature of love and desire. It presents various perspectives on love through a series of speeches.', 1, 'Ancient Greek', 'Philosophy, Ethics, Virtue, Moral Philosophy, Ancient Greek Philosophy', 3, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780199537563', 'The Histories', 'Oxford University Press', 848, '"The Histories" is a seminal work of history by Herodotus, often considered the first historian. It chronicles the Persian Wars and provides a detailed account of ancient civilizations, cultures, and events. The book offers valuable insights into the political, cultural, and military history of the ancient world.', 1, 'English', 'Ancient Greek civilization', 5, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780205309023', 'The Elements of Style', 'Pearson', 105, 'This book is a classic guide to English language usage and writing style. It provides essential rules of grammar, punctuation, and composition, helping students improve their writing skills and develop a strong command of the English language.', 1, 'English', 'School Book, English, Writing, Grammar, Composition', 14, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780312256866', 'Literature: The American Experience', 'Bedford/St. Martin''s', 956, 'This literature anthology explores the rich diversity of American literary works. It features poems, short stories, and novels from various periods, highlighting the cultural, social, and historical aspects of American literature', 1, 'English', 'School Book, Literature, American Literature, Anthology', 8, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780316051644', 'The Disappearing Spoon', 'Back Bay Books', 416, '"The Disappearing Spoon" is a fascinating book that explores the history, quirks, and stories behind the elements of the periodic table. It delves into the world of chemistry, uncovering intriguing anecdotes and connecting the elements to various aspects of human history and culture', 1, 'English', 'Chemistry, Periodic Table, History of Science', 4, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780316184137', 'The Complete Poems', 'Back Bay Books', 784, '"The Complete Poems" of Emily Dickinson contains her entire body of work, showcasing her unique style and exploration of themes such as nature, love, mortality, and the human condition', 1, 'English', 'American Poetry, Nature, Human Condition', 2, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780316322409', 'I Am Malala', 'Little, Brown and Company', 368, '"I Am Malala" is the inspiring autobiography of Malala Yousafzai, a young Pakistani girl who defied the Taliban''s ban on girls'' education. The book chronicles her fight for education rights, her survival after being shot by the Taliban, and her ongoing activism for girls'' education worldwide', 1, 'English', 'Education, Activism, Pakistan, Women''s Rights', 5, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780321869111', 'Physics: Principles with Applications', 'Pearson', 888, 'This physics textbook presents the principles of physics in an accessible manner, emphasizing real-world applications. It covers topics such as mechanics, electricity, magnetism, and modern physics, providing clear explanations and problem-solving strategies.', 1, 'English', 'School Book, Physics, Science, Principles, Applications', 4, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780321869111', 'Physics: Principles with Applications', 'Pearson', 888, 'This physics textbook presents the principles of physics in an accessible manner, emphasizing real-world applications. It covers topics such as mechanics, electricity, magnetism, and modern physics, providing clear explanations and problem-solving strategies.', 1, 'English', 'School Book, Physics, Science, Principles, Applications', 4, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780345476098', 'The Guns of August', 'Presidio Press', 511, '"The Guns of August" is a historical account of the events leading up to World War I, focusing on the political and military decisions made by various countries during the critical month of August 1914.', 1, 'English', 'World War I, History, Military Strategy', 11, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780345539434', 'Cosmos', 'Ballantine Books', 384, '"Cosmos" explores the wonders of the universe, covering topics such as astronomy, physics, and cosmology. Carl Sagan takes readers on a captivating journey through space and time, unraveling the mysteries of the cosmos.', 1, 'English', 'Astronomy, Astrophysics, Cosmology, Space Exploration', 5, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780374530716', 'Sophie\s World', 'Farrar, Straus and Giroux', 544, '"Sophie\s World" is a unique novel that explores the history of philosophy through the eyes of a young girl named Sophie. It introduces various philosophical ideas and thinkers, making complex concepts accessible and engaging for readers of all ages.', 1, 'English', 'Philosophy, Novel, History of Philosophy, Philosophical Ideas', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780375708114', 'The Elegant Universe', 'Vintage Books', 564, '"The Elegant Universe" takes readers on a journey into the world of physics and explores the fascinating concept of string theory. Brian Greene, a renowned physicist, explains complex theories in a way that is accessible and engaging, making this book a captivating exploration of the universe.', 1, 'English', 'Physics, Superstrings, String Theory, Cosmology', 7, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780385495325', 'The Code Book: The Science of Secrecy from Ancient Times to Quantum Cryptography', 'Anchor', 432, '"The Code Book" uncovers the fascinating world of codes and ciphers throughout history. From ancient techniques to modern encryption methods, Simon Singh explores the art of secrecy and the role of codes in shaping historical events, including their use in warfare and intelligence.', 1, 'English', 'Cryptography, History of Science, Codes, Ciphers', 10, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780385751063', 'The Boy in the Striped Pajamas', 'David Fickling Books', 215, '"The Boy in the Striped Pajamas" is a poignant story set during the Holocaust. It follows the unlikely friendship between Bruno, the son of a Nazi officer, and Shmuel, a Jewish boy in a concentration camp. The book raises important questions about prejudice, empathy, and the power of innocence.', 1, 'English', 'Holocaust, Friendship, Innocence, Prejudice', 5, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780393338102', 'The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory', 'W. W. Norton & Company', 464, '"The Elegant Universe" explores the fascinating world of theoretical physics and the quest for a unified theory of everything. It introduces readers to concepts such as string theory and explores the nature of space, time, and the universe.', 1, 'English', 'Physics, Cosmology, String Theory, Quantum Mechanics', 12, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780393609394', 'Astrophysics for People in a Hurry', 'W. W. Norton & Company', 222, '"Astrophysics for People in a Hurry" offers a concise and accessible introduction to the wonders of the universe. Neil deGrasse Tyson, a renowned astrophysicist, presents complex concepts in a simplified manner, allowing readers to grasp the fundamentals of astrophysics and gain a new perspective on the cosmos.', 1, 'English', 'Astrophysics, Universe, Cosmology', 14, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780395566111', 'Pablo Neruda: Selected Poems', 'Vintage', 288, '"Pablo Neruda: Selected Poems" features a collection of poems by the renowned Chilean poet Pablo Neruda. His works encompass a wide range of themes, including love, nature, politics, and social justice.', 1, 'English', 'Love, Passion, Nature, Politics, Social Justice, Beauty', 8, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780439023528', 'The Hunger Games', 'Scholastic Press', 384, '"The Hunger Games" is a thrilling dystopian novel set in a post-apocalyptic world. It follows the story of Katniss Everdeen, a young girl who becomes a symbol of rebellion against the oppressive Capitol. The book explores themes of survival, love, and social inequality.', 1, 'English', 'Fiction, Dystopian, Adventure, Survival, Rebellion, Young Adult', 8, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780451524935', '1984', 'Signet Classics', 328, '"1984" is a dystopian novel set in a totalitarian society where individualism and independent thinking are brutally suppressed. The story follows the life of Winston Smith, a low-ranking member of the ruling Party, as he rebels against the oppressive regime and seeks freedom and truth. The novel explores themes of surveillance, propaganda, and the power of language.', 1, 'English', 'Dystopian, Totalitarianism, Surveillance, Propaganda', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780451532152', 'Animal Farm', 'Signet Classics', 144, '"Animal Farm" is a satirical allegory that tells the story of a group of farm animals who overthrow their human farmer and establish their own egalitarian society. However, the pigs, who assume leadership, gradually become corrupted by power and betray the principles of the revolution. The novel serves as a critique of totalitarianism and explores themes of political corruption and manipulation.', 1, 'English', 'Allegory, Satire, Revolution, Totalitarianism', 4, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780521189064', 'English Grammar in Use', 'Cambridge University Press', 390, 'This school book is a comprehensive guide to English grammar, suitable for students learning English as a second language. It covers essential grammar rules, provides examples and exercises for practice, and helps improve language proficiency.', 1, 'English', 'School Book, English, Grammar, Language Learning', 20, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780525478812', 'The Fault in Our Stars', 'Dutton Books', 336, '"The Fault in Our Stars" is a heartwarming and poignant novel that tells the story of Hazel and Gus, two teenagers who meet and fall in love while dealing with serious illnesses. The book explores themes of love, friendship, and the complexities of life', 1, 'English', 'Fiction, Young Adult, Romance, Friendship, Illness, Life', 6, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780547577098', 'Number the Stars', 'HMH Books for Young Readers', 137, '"Number the Stars" is a historical fiction novel set in Denmark during World War II. It tells the story of a young girl named Annemarie who helps her Jewish friend Ellen escape from the Nazis. The book explores themes of bravery, friendship, and resistance.', 1, 'English', 'World War II, Danish Resistance, Friendship, Courage', 9, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780553296983', 'The Diary of a Young Girl', 'Bantam Books', 283, '"The Diary of a Young Girl" is the personal diary of Anne Frank, a Jewish girl who went into hiding during the Nazi occupation of the Netherlands. Her diary provides a firsthand account of the fear, hope, and resilience experienced by those living in hiding during the Holocaust.', 1, 'English', 'World War II, Holocaust, Diary, Jewish History', 4, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780571247055', 'The Waste Land', 'Faber & Faber', 64, '"The Waste Land" is a landmark modernist poem that explores themes of disillusionment, spiritual crisis, and cultural decay. It is considered one of the most important works of 20th-century literature.', 1, 'English', 'Modernist Poetry, Cultural Decay, Spiritual Crisis', 7, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780618184787', 'World History: Patterns of Interaction', 'McDougal Littell', 948, 'This school textbook offers an in-depth exploration of world history, highlighting major events, civilizations, and global patterns. It provides engaging narratives, primary source documents, and interactive activities to enhance learning.', 1, 'English', 'School Book, History, World History, Civilizations', 7, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780679729821', 'The Collected Poems of C.P. Cavafy', 'Vintage', 336, '"The Collected Poems of C.P. Cavafy" brings together the complete works of one of the most influential Greek poets of the 20th century. Cavafy\'s poems, often characterized by their introspection, historical themes, and sensual imagery, delve into various aspects of human experience and explore concepts of love, desire, and the passage of time.', 1, 'English', 'Poetry, Greek Literature, Modernism, Historical Themes', 10, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780691118802', 'The Princeton Companion to Mathematics', 'Princeton University Press', 956, '"The Princeton Companion to Mathematics" is a comprehensive reference book that covers various branches of mathematics, providing insights into the history, concepts, and applications of the subject.', 1, 'English', 'Mathematics, Reference, Mathematical Concepts', 5, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780691155142', 'Euclid\s Elements', 'Princeton University Press', 464, '"Euclid\s Elements" is a foundational mathematical work, providing a comprehensive introduction to geometry. It presents a systematic approach to mathematical proofs and concepts.', 1, 'English', 'Mathematics, Geometry, Mathematical Proofs, Euclidean Geometry', 4, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780714833552', 'The Story of Art', 'Phaidon Press', 688, '"The Story of Art" is a comprehensive introduction to the history of art. It covers various art movements, styles, and periods, providing readers with a broad understanding of the development of art throughout human history.', 1, 'English', 'Art History, Visual Arts', 8, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780714835334', 'The Story of Modern Art', 'Phaidon Press', 448, '"The Story of Modern Art" traces the development of modern art from the late 19th century to the present day. It examines key artists, movements, and groundbreaking artworks, shedding light on the dynamic and ever-evolving nature of modern art.', 1, 'English', 'Modern Art, Avant-Garde, Artistic Innovations, Contemporary Art', 3, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780743273565', 'The Great Gatsby', 'Scribner', 180, 'Set in the 1920s, this classic novel portrays the decadence and disillusionment of the Jazz Age through the eyes of Jay Gatsby and narrator Nick Carraway.', 1, 'English', 'Roaring Twenties', 8, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780743273565', 'The Great Gatsby', 'Scribner', 180, 'Set in the 1920s, this classic novel portrays the decadence and disillusionment of the Jazz Age through the eyes of Jay Gatsby and narrator Nick Carraway.', 1, 'English', 'Roaring Twenties', 3, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780801048371', 'Archimedes and the Door of Science', 'Bethlehem Books', 96, '"Archimedes and the Door of Science" is a biographical book that introduces readers to the life and discoveries of the ancient Greek mathematician and inventor, Archimedes.', 1, 'English', 'Biography, Mathematics, Archimedes, Ancient Greek History, Inventions', 3, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780804125840', 'Physics Essentials', 'Princeton Review', 352, '"Physics Essentials" is a concise guide that covers the fundamental concepts of physics. It introduces topics such as motion, forces, energy, electricity, and magnetism. The book includes diagrams, examples, and practice questions to aid in understanding and application.', 1, 'English', 'Physics, Textbook, Fundamentals, Motion, Forces, Energy, Electricity, Magnetism', 10, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780815341888', 'The Molecules of Life: Physical and Chemical Principles', 'Garland Science', 864, '"The Molecules of Life" provides a comprehensive overview of the physical and chemical principles underlying biological molecules. It explores the structures, functions, and interactions of proteins, nucleic acids, carbohydrates, and lipids, offering insights into the molecular basis of life.', 1, 'English', 'Chemistry, Periodic Table, Elements, History', 12, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9780980232776', 'Introduction to Linear Algebra', 'Gilbert Strang', 570, '"Introduction to Linear Algebra" is a textbook that offers a comprehensive introduction to the theory and applications of linear algebra, including vector spaces, matrices, and linear transformations.', 1, 'English', 'Linear Algebra, Mathematics, Linear Transformations', 15, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781108422161', 'An Introduction to Astrophysics', 'Cambridge University Press', 932, 'This introductory textbook covers various aspects of astrophysics, including stellar structure and evolution, galaxies, cosmology, and the physical processes occurring in the universe.', 1, 'English', 'Astrophysics, Astronomy, Stellar Structure, Stellar Evolution, Cosmology', 2, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781269944090', 'Biology(Concepts and Connections)', 'Pearson', 982, 'This biology textbook explores the fundamental concepts of biology and their real-world applications. It covers topics such as cell biology, genetics, evolution, and ecology, providing engaging illustrations and interactive exercises.', 1, 'English', 'School Book, Biology, Science, Cells, Genetics', 6, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781285741550', 'Calculus: Early Transcendentals', 'Cengage Learning', 968, 'This calculus textbook covers topics such as limits, derivatives, integrals, and applications, providing a solid foundation in calculus.', 1, 'English', 'Calculus, Mathematics, Limits, Derivatives, Integrals', 4, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781305076516', 'Living in the Environment: Principles, Connections', 'Cengage Learning', 800, 'This environmental science textbook provides an interdisciplinary approach to understanding and solving environmental issues. It covers topics such as ecosystems, biodiversity, natural resources, and environmental policy, offering real-world examples and solutions.', 1, 'English', 'School Book, Environmental Science, Sustainability, Ecosystems', 4, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781337091213', 'American Government: Institutions and Policies', 'Cengage Learning', 752, 'This government textbook explores the structure and functions of American government institutions. It covers topics such as the Constitution, Congress, the Presidency, and the judiciary, offering insights into the political processes and policies of the United States.', 1, 'English', 'School Book, American Government, Politics, Institutions', 3, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781337555724', 'Introduction to Psychology', 'Cengage Learning', 608, '"Introduction to Psychology" provides an overview of the fundamental concepts and theories in psychology. It covers topics such as human behavior, cognition, emotions, personality, and psychological disorders, offering students a solid foundation in the field.', 1, 'English', 'Human Behavior, Cognition, Emotions, Personality, Psychological Disorders', 10, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781401952471', 'The Biology of Belief', 'Hay House', 264, '"The Biology of Belief" explores the relationship between biology, beliefs, and consciousness. It delves into the field of epigenetics and discusses how our thoughts and perceptions can influence our health and well-being.', 1, 'English', 'Cellular Biology, Epigenetics, Mind-Body Connection, Belief Systems', 3, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781402778612', 'The Physics Book', 'Union Square & Co', 528, 'From the Big Bang to Quantum Resurrection, 250 Milestones in the History of Physics (Union Square & Co. Milestones)', 1, 'English', 'physics, big bang, clifford pickover', 8, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781402785856', 'The Medical Book', 'Union Square & Co', 600, 'Following his hugely successful The Math Book and The Physics Book, Clifford Pickover now chronicles the advancement of medicine in 250 entertaining, illustrated landmark events. Touching on such diverse subspecialties as genetics, pharmacology, neurology, sexology, and immunology, Pickover intersperses ΥobviousΦ historical milestones--the Hippocratic Oath, general anesthesia, the Human Genome Project--with unexpected and intriguing topics like Υtruth serum,Φ the use of cocaine in eye surgery, and face transplants.', 1, 'English', 'Hardcover, Illustrated, historical milestones', 10, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781449474256', 'Milk and Honey', 'Andrews McMeel Publishing', 208, '"Milk and Honey" is a collection of poetry and prose that explores themes of love, loss, healing, and femininity. Rupi Kaur\'s evocative words and poignant illustrations create a powerful and deeply personal reading experience.', 1, 'English', 'Poetry, Feminism, Empowerment', 10, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781449486792', 'The Sun and Her Flowers', 'Andrews McMeel Publishing', 256, '"The Sun and Her Flowers" is another compelling collection of poetry by Rupi Kaur. This book delves into themes of growth, self-love, resilience, and the beauty of the human spirit, taking readers on a journey of healing and empowerment.', 1, 'English', 'Poetry, Self-Discovery, Healing', 5, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781451624457', 'The Immortal Life of Henrietta Lacks', 'Broadway Books', 381, 'This gripping non-fiction book tells the story of Henrietta Lacks, an African-American woman whose cells were unknowingly used for medical research, revolutionizing modern medicine.', 1, 'English', 'Non-fiction, Science, Ethics', 4, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781454918479', 'The Philosophy Book', 'Union Square & Co', 528, 'Philosophy explores the deepest, most fundamental questions of realityΩand this accessible and entertaining chronology presents 250 milestones of the most important theories, events, and seminal publications in the field over the last 3,500 years. The brief, engaging entries cover a range of topics and cultures, from the Hindu Vedas and PlatoΤs theory of forms to OckhamΤs Razor, PascalΤs Wager, HumeΤs A Treatise of Human Nature, existentialism, feminism, Philosophical Zombies, and the Triple Theory of Ethics. Beautifully illustrated and filled with unexpected insights, The Philosophy Book will appeal to a wide spectrum of readers.', 1, 'English', 'questions, reality, thinking', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781455510185', 'Women, Work, and the Will to Lead', 'Knopf', 240, 'This empowering book addresses gender equality in the workplace, encouraging women to pursue their ambitions, challenge societal norms, and strive for leadership roles.', 1, 'English', 'Gender Equality, Leadership', 2, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781476733500', 'The Gene: An Intimate History', 'W. W. Norton & Company', 608, '"The Gene" delves into the history, impact, and future implications of genetics. Siddhartha Mukherjee explores the fascinating world of genes, their influence on human traits, and the ethical dilemmas associated with genetic technologies.', 1, 'English', 'Genetics, DNA, Heredity, Genetic Engineering', 2, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781585423316', 'Napoleon''s Buttons: How 17 Molecules Changed History', 'TarcherPerigee', 384, '"Napoleon''s Buttons" explores the impact of 17 specific molecules on human history. From caffeine to silk, these molecules have played a significant role in shaping civilization, wars, and cultural exchange.', 1, 'English', 'Chemistry, Molecules, History, Impact, Civilization', 5, '1o Gel Halandriou');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781593080174', 'The Art of War', 'Barnes & Noble Classics', 256, '"The Art of War" is a renowned ancient Chinese military treatise that offers strategic insights and principles applicable not only to warfare but also to various aspects of life, including leadership, management, and decision-making.', 1, 'English', 'Military Strategy, Leadership, Decision-making, Tactics', 7, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781594480003', 'The Power of Now: A Guide to Spiritual Enlightenment', 'New World Library', 236, 'This spiritual guide explores the concept of living in the present moment, offering practical teachings and insights to help readers find peace and spiritual awakening.', 1, 'English', 'non-fiction, spirituality, self-help', 4, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781617316209', 'Junior High Science: Physics and Chemistry', 'Morton Publishing Company', 384, '"Junior High Science: Physics and Chemistry" is a combined textbook that provides an introduction to both physics and chemistry concepts. It covers topics such as motion, forces, matter, elements, compounds, and chemical reactions. The book includes hands-on activities and practice exercises.', 1, 'English', 'Science, Textbook, Junior High School, Physics, Chemistry, Motion, Forces, Matter, Elements, Compounds, Chemical Reactions', 4, '7o Gymnasio Haniwn');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781664112940', 'Organic Chemistry', 'Kofi Busia', 662, 'Organic compounds are ubiquitous in nature. They are present in food, commercial products, domestic materials, and all the cells of the human body. The realization that the chemistry of organic compounds permeates all life forms often stimulates the desire of many students to pursue studies in medical- and natural-chemistry-related fields.', 1, 'English', 'Organic compounds, user-friendly textbooks, readily-available and easy-to-read textbooks', 3, '18o Gel Triandrias');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781771642484', 'The Hidden Life of Trees: What They Feel, How They Communicate - Discoveries from a Secret World', 'Broadway Books', 288, '"The Hidden Life of Trees" uncovers the fascinating world of trees, revealing their complex communication systems, social behaviors, and interconnectedness. Peter Wohlleben offers a fresh perspective on the wonders of the natural world.', 1, 'English', 'Trees, Ecology, Nature, Communication, Forests', 3, '2o Gel Thivas');
+
+INSERT INTO books (ISBN, title, publisher, num_of_pages, summary, cover_image, language, keywords, copies, school_name)
+VALUES ('9781782946335', 'Maths', 'Coordination Group', 152, 'This fantastic Functional Skills book has everything students need to prepare for the Level 2 Maths test! It covers every exam board and every topic, including all the calculator and non-calculator skills needed for the latest L2 Functional Skills specifications. Everything''s explained in CGP''s easy-to-understand style, with examples and notes galore. Each topic is followed by a page of practice questions, so students can learn then test themselves as they go. We''ve also included exam-style practice papers with full answers so you''ll know what to expect on the big day. Nice!', 1, 'English', 'Algebra', 6, '18o Gel Triandrias');
+
+INSERT INTO author (author_id, author_name) VALUES (22, 'Michael Pollan');
+INSERT INTO author (author_id, author_name) VALUES (23, 'Sheryl Sandberg');
+INSERT INTO author (author_id, author_name) VALUES (24, 'Nell Scovell');
+INSERT INTO author (author_id, author_name) VALUES (25, 'Eckhart Tolle');
+INSERT INTO author (author_id, author_name) VALUES (26, 'George Orwell');
+INSERT INTO author (author_id, author_name) VALUES (27, 'Herodotus');
+INSERT INTO author (author_id, author_name) VALUES (28, 'Plato');
+INSERT INTO author (author_id, author_name) VALUES (29, 'Euclid');
+INSERT INTO author (author_id, author_name) VALUES (31, 'Jeanne Bendick');
+INSERT INTO author (author_id, author_name) VALUES (32, 'David Macaulay');
+INSERT INTO author (author_id, author_name) VALUES (33, 'Marcus Aurelius');
+INSERT INTO author (author_id, author_name) VALUES (34, 'Ovid');
+INSERT INTO author (author_id, author_name) VALUES (35, 'Aristotle');
+INSERT INTO author (author_id, author_name) VALUES (36, 'Sam Kean');
+INSERT INTO author (author_id, author_name) VALUES (37, 'Brian Greene');
+INSERT INTO author (author_id, author_name) VALUES (38, 'Kapeleris');
+INSERT INTO author (author_id, author_name) VALUES (39, 'Yuval Noah Harari');
+INSERT INTO author (author_id, author_name) VALUES (40, 'Kissa');
+INSERT INTO author (author_id, author_name) VALUES (41, 'Simon Singh');
+INSERT INTO author (author_id, author_name) VALUES (42, 'Papaspirou');
+INSERT INTO author (author_id, author_name) VALUES (43, 'Fotakis');
+INSERT INTO author (author_id, author_name) VALUES (44, 'Neil deGrasse Tyson');
+INSERT INTO author (author_id, author_name) VALUES (45, 'Thomas Hager');
+INSERT INTO author (author_id, author_name) VALUES (46, 'Rupi Kaur');
+INSERT INTO author (author_id, author_name) VALUES (47, 'T.S. Eliot');
+INSERT INTO author (author_id, author_name) VALUES (48, 'Walt Whitman');
+INSERT INTO author (author_id, author_name) VALUES (49, 'Cavafy');
+INSERT INTO author (author_id, author_name) VALUES (50, 'Edgar Allan Poe');
+INSERT INTO author (author_id, author_name) VALUES (51, 'Rumi');
+INSERT INTO author (author_id, author_name) VALUES (52, 'Sylvia Plath');
+INSERT INTO author (author_id, author_name) VALUES (53, 'Sappho');
+INSERT INTO author (author_id, author_name) VALUES (54, 'Emily Dickinson');
+INSERT INTO author (author_id, author_name) VALUES (55, 'Anna Akhmatova');
+INSERT INTO author (author_id, author_name) VALUES (56, 'Timothy Gowers');
+INSERT INTO author (author_id, author_name) VALUES (57, 'Gilbert Strang');
+INSERT INTO author (author_id, author_name) VALUES (58, 'Jo Boaler');
+INSERT INTO author (author_id, author_name) VALUES (59, 'Barbara W. Tuchman');
+INSERT INTO author (author_id, author_name) VALUES (60, 'Howard Zinn');
+INSERT INTO author (author_id, author_name) VALUES (61, 'Penny Le Couteur');
+INSERT INTO author (author_id, author_name) VALUES (62, 'Jay Burreson');
+INSERT INTO author (author_id, author_name) VALUES (63, 'John Kuriyan');
+INSERT INTO author (author_id, author_name) VALUES (64, 'Boyana Konfotri');
+INSERT INTO author (author_id, author_name) VALUES (65, 'David Wemmer');
+INSERT INTO author (author_id, author_name) VALUES (66, 'Roger B. Beck et al.');
+INSERT INTO author (author_id, author_name) VALUES (67, 'Raymond Murphy');
+INSERT INTO author (author_id, author_name) VALUES (68, 'Eleni Spilioti');
+INSERT INTO author (author_id, author_name) VALUES (69, 'Neil A. Campbell et al.');
+INSERT INTO author (author_id, author_name) VALUES (70, 'Richard G. Boehm et al');
+INSERT INTO author (author_id, author_name) VALUES (71, 'Neil A. Campbell et al');
+INSERT INTO author (author_id, author_name) VALUES (72, 'William Strunk Jr.');
+INSERT INTO author (author_id, author_name) VALUES (73, 'E.B. White');
+INSERT INTO author (author_id, author_name) VALUES (74, 'Theodore E. Brown');
+INSERT INTO author (author_id, author_name) VALUES (75, 'H. Eugene LeMay Jr');
+INSERT INTO author (author_id, author_name) VALUES (76, 'Bruce E. Bursten');
+INSERT INTO author (author_id, author_name) VALUES (77, 'Catherine Murphy');
+INSERT INTO author (author_id, author_name) VALUES (78, 'Patrick Woodward');
+INSERT INTO author (author_id, author_name) VALUES (79, 'Matthew E. Stoltzfus');
+INSERT INTO author (author_id, author_name) VALUES (80, 'Neil A. Campbell');
+INSERT INTO author (author_id, author_name) VALUES (81, 'Jane B. Reece et al');
+INSERT INTO author (author_id, author_name) VALUES (82, 'James Q. Wilson');
+INSERT INTO author (author_id, author_name) VALUES (83, 'John J. DiIulio Jr.');
+INSERT INTO author (author_id, author_name) VALUES (84, 'Meena Bose');
+INSERT INTO author (author_id, author_name) VALUES (85, 'Dingrando');
+INSERT INTO author (author_id, author_name) VALUES (86, 'Hainen');
+INSERT INTO author (author_id, author_name) VALUES (87, 'Wistrom');
+INSERT INTO author (author_id, author_name) VALUES (88, 'Richard R. Abcarian');
+INSERT INTO author (author_id, author_name) VALUES (89, 'Marvin Klotz');
+INSERT INTO author (author_id, author_name) VALUES (90, 'Samuel Cohen');
+INSERT INTO author (author_id, author_name) VALUES (91, 'Douglas C. Giancoli');
+INSERT INTO author (author_id, author_name) VALUES (92, 'David L. Clawson');
+INSERT INTO author (author_id, author_name) VALUES (93, 'Francis P. Hunkins');
+INSERT INTO author (author_id, author_name) VALUES (94, 'McConnel');
+INSERT INTO author (author_id, author_name) VALUES (95, 'Brue');
+INSERT INTO author (author_id, author_name) VALUES (96, 'Jean-Paul Valette');
+INSERT INTO author (author_id, author_name) VALUES (97, 'Rebecca M. Valette');
+INSERT INTO author (author_id, author_name) VALUES (98, 'Richard T. Wright');
+INSERT INTO author (author_id, author_name) VALUES (99, 'Dorothy F. Boorse');
+INSERT INTO author (author_id, author_name) VALUES (100, 'G. Tyler Miller');
+INSERT INTO author (author_id, author_name) VALUES (101, 'Scott Spoolman');
+INSERT INTO author (author_id, author_name) VALUES (102, 'Wendell P.Ela');
+INSERT INTO author (author_id, author_name) VALUES (103, 'Jostein Gaarder');
+INSERT INTO author (author_id, author_name) VALUES (104, 'Friedrich Nietzsche');
+INSERT INTO author (author_id, author_name) VALUES (105, 'Raymond Toolsie');
+INSERT INTO author (author_id, author_name) VALUES (106, 'The Princeton Review');
+INSERT INTO author (author_id, author_name) VALUES (107, 'John T. Moore');
+INSERT INTO author (author_id, author_name) VALUES (108, 'Michael J. Leboffe et al');
+INSERT INTO author (author_id, author_name) VALUES (109, 'Suzanne Collins');
+INSERT INTO author (author_id, author_name) VALUES (110, 'John Green');
+INSERT INTO author (author_id, author_name) VALUES (111, 'Coleman Barks');
+INSERT INTO author (author_id, author_name) VALUES (112, 'Pablo Neruda');
+INSERT INTO author (author_id, author_name) VALUES (113, 'Anna Frank');
+INSERT INTO author (author_id, author_name) VALUES (114, 'John Boyne');
+INSERT INTO author (author_id, author_name) VALUES (115, 'Malala Yousafzai');
+INSERT INTO author (author_id, author_name) VALUES (116, 'Sun Tzu');
+INSERT INTO author (author_id, author_name) VALUES (117, 'James W. Kalat');
+INSERT INTO author (author_id, author_name) VALUES (118, 'Bruce H. Lipton');
+INSERT INTO author (author_id, author_name) VALUES (119, 'E.H. Gombrich');
+INSERT INTO author (author_id, author_name) VALUES (120, 'Norbert Lynton');
+INSERT INTO author (author_id, author_name) VALUES (121, 'Carl Sagan');
+INSERT INTO author (author_id, author_name) VALUES (122, 'Siddhartha Mukherjee');
+INSERT INTO author (author_id, author_name) VALUES (123, 'Peter Wohlleben');
+INSERT INTO author (author_id, author_name) VALUES (124, 'James Stewart');
+INSERT INTO author (author_id, author_name) VALUES (125, 'Kenneth H. Rosen');
+INSERT INTO author (author_id, author_name) VALUES (126, 'Bradley W. Carroll');
+INSERT INTO author (author_id, author_name) VALUES (127, 'Dale A. Ostlie');
+
+INSERT INTO is_author (ISBN, author_id) VALUES ('978006025665', 17);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978006025665', 18);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978006028075', 19);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978014044929', 28);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978047089452', 8);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978047089452', 58);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978054757731', 20);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978069115514', 29);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780038026756', 96);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780038026756', 97);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780060732592', 52);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780060750503', 51);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780060838652', 60);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780061120080', 10);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780061120080', 45);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780061122415', 15);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780062316097', 39);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780062316097', 40);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780062509598', 51);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780062509598', 111);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780071315012', 125);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078021756', 94);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078021756', 95);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078245836', 70);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078245836', 71);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078745607', 70);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078745607', 92);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078745607', 93);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078746376', 10);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078746376', 85);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078746376', 86);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078746376', 87);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078772375', 10);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780078772375', 107);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780131481930', 57);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780131481930', 102);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978013401127', 98);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978013401127', 99);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780134065455', 69);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140275360', 20);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140421996', 48);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140441185', 104);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140443161', 33);
+INSERT INTO is_author (ISBN, author_id) VALUES ('978014044929', 28);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140449334', 33);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780140449491', 35);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780141198975', 50);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780142402511', 110);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780142407332', 15);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780142407332', 16);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780142437315', 47);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780143036531', 22);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780192833753', 20);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780192833753', 27);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780199129593', 8);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780199129593', 105);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780199537259', 34);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780199537532', 28);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780199537563', 27);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780205309023', 72);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780205309023', 73);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780312256866', 88);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780312256866', 89);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780312256866', 90);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316051644', 10);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316051644', 36);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316184137', 53);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316184137', 54);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316184137', 55);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780316322409', 115);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780321869111', 91);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780321910417', 74);
+INSERT INTO is_author (ISBN, author_id) VALUES ('9780321910417', 75);
+
+INSERT INTO category (theme) VALUES ('adventure');
+INSERT INTO category (theme) VALUES ('agriculture');
+INSERT INTO category (theme) VALUES ('algebra');
+INSERT INTO category (theme) VALUES ('allegory');
+INSERT INTO category (theme) VALUES ('ancient greek philosophy');
+INSERT INTO category (theme) VALUES ('ancient history');
+INSERT INTO category (theme) VALUES ('ancient literature');
+INSERT INTO category (theme) VALUES ('ancient roman philosophy');
+INSERT INTO category (theme) VALUES ('anthology');
+INSERT INTO category (theme) VALUES ('anthropology');
+INSERT INTO category (theme) VALUES ('art');
+INSERT INTO category (theme) VALUES ('astrophysics');
+INSERT INTO category (theme) VALUES ('atomic structure');
+INSERT INTO category (theme) VALUES ('bilogy');
+INSERT INTO category (theme) VALUES ('biography');
+INSERT INTO category (theme) VALUES ('biology');
+INSERT INTO category (theme) VALUES ('chemistry');
+INSERT INTO category (theme) VALUES ('civilization');
+INSERT INTO category (theme) VALUES ('classical literature');
+INSERT INTO category (theme) VALUES ('classics');
+INSERT INTO category (theme) VALUES ('cosmology');
+INSERT INTO category (theme) VALUES ('cryptography');
+INSERT INTO category (theme) VALUES ('diary');
+INSERT INTO category (theme) VALUES ('economics');
+INSERT INTO category (theme) VALUES ('ecosystem');
+INSERT INTO category (theme) VALUES ('ecosystems');
+INSERT INTO category (theme) VALUES ('education');
+INSERT INTO category (theme) VALUES ('engineering');
+INSERT INTO category (theme) VALUES ('epic');
+INSERT INTO category (theme) VALUES ('Ethics');
+INSERT INTO category (theme) VALUES ('existentialism');
+INSERT INTO category (theme) VALUES ('feminism');
+INSERT INTO category (theme) VALUES ('fiction');
+INSERT INTO category (theme) VALUES ('food');
+INSERT INTO category (theme) VALUES ('french fanguage');
+INSERT INTO category (theme) VALUES ('genetics');
+INSERT INTO category (theme) VALUES ('geography');
+INSERT INTO category (theme) VALUES ('geometry');
+INSERT INTO category (theme) VALUES ('grammar');
+INSERT INTO category (theme) VALUES ('greek history');
+INSERT INTO category (theme) VALUES ('hisstory');
+INSERT INTO category (theme) VALUES ('history');
+INSERT INTO category (theme) VALUES ('imagination');
+INSERT INTO category (theme) VALUES ('language learning');
+INSERT INTO category (theme) VALUES ('literature');
+INSERT INTO category (theme) VALUES ('love');
+INSERT INTO category (theme) VALUES ('mathematical proofs');
+INSERT INTO category (theme) VALUES ('mathematics');
+INSERT INTO category (theme) VALUES ('medical');
+INSERT INTO category (theme) VALUES ('modernism');
+INSERT INTO category (theme) VALUES ('molecules');
+INSERT INTO category (theme) VALUES ('mythology');
+INSERT INTO category (theme) VALUES ('nature');
+INSERT INTO category (theme) VALUES ('neurology');
+INSERT INTO category (theme) VALUES ('Non-fiction');
+INSERT INTO category (theme) VALUES ('Novel');
+INSERT INTO category (theme) VALUES ('pharmacology');
+INSERT INTO category (theme) VALUES ('philosophy');
+INSERT INTO category (theme) VALUES ('phycology');
+INSERT INTO category (theme) VALUES ('physics');
+INSERT INTO category (theme) VALUES ('poetry');
+INSERT INTO category (theme) VALUES ('political fiction');
+INSERT INTO category (theme) VALUES ('politics');
+INSERT INTO category (theme) VALUES ('romance');
+INSERT INTO category (theme) VALUES ('satire');
+INSERT INTO category (theme) VALUES ('science');
+INSERT INTO category (theme) VALUES ('science fiction');
+INSERT INTO category (theme) VALUES ('self-help');
+INSERT INTO category (theme) VALUES ('self-reflection');
+INSERT INTO category (theme) VALUES ('social');
+INSERT INTO category (theme) VALUES ('spirituality');
+INSERT INTO category (theme) VALUES ('stoicism');
+INSERT INTO category (theme) VALUES ('strategy');
+INSERT INTO category (theme) VALUES ('supernatural');
+INSERT INTO category (theme) VALUES ('sustainability');
+INSERT INTO category (theme) VALUES ('trigonometry');
+INSERT INTO category (theme) VALUES ('war');
+INSERT INTO category (theme) VALUES ('writing');
+
+INSERT INTO book_category (theme, ISBN) VALUES ('adventure', '9780439023528');
+INSERT INTO book_category (theme, ISBN) VALUES ('agriculture', '9780143036531');
+INSERT INTO book_category (theme, ISBN) VALUES ('algebra', '9780199129593');
+INSERT INTO book_category (theme, ISBN) VALUES ('algebra', '9780980232776');
+INSERT INTO book_category (theme, ISBN) VALUES ('allegory', '9780451532152');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient greek philosophy', '978014044929');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient greek philosophy', '978014044929');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient greek philosophy', '9780140449491');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient greek philosophy', '9780199537532');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient history', '9780199537563');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient history', '9780801048371');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient literature', '9780192833753');
+INSERT INTO book_category (theme, ISBN) VALUES ('ancient roman philosophy', '9780140443161');
+INSERT INTO book_category (theme, ISBN) VALUES ('anthology', '9780312256866');
+INSERT INTO book_category (theme, ISBN) VALUES ('anthropology', '9780062316097');
+INSERT INTO book_category (theme, ISBN) VALUES ('art', '9780714833552');
+INSERT INTO book_category (theme, ISBN) VALUES ('art', '9780714835334');
+INSERT INTO book_category (theme, ISBN) VALUES ('astrophysics', '9780345539434');
+INSERT INTO book_category (theme, ISBN) VALUES ('astrophysics', '9780393609394');
+INSERT INTO book_category (theme, ISBN) VALUES ('astrophysics', '9781108422161');
+INSERT INTO book_category (theme, ISBN) VALUES ('atomic structure', '9780321910417');
+INSERT INTO book_category (theme, ISBN) VALUES ('bilogy', '9781269944090');
+INSERT INTO book_category (theme, ISBN) VALUES ('biography', '9780316322409');
+INSERT INTO book_category (theme, ISBN) VALUES ('biography', '9780801048371');
+INSERT INTO book_category (theme, ISBN) VALUES ('biology', '9780134065455');
+INSERT INTO book_category (theme, ISBN) VALUES ('biology', '9780815341888');
+INSERT INTO book_category (theme, ISBN) VALUES ('biology', '9781401952471');
+INSERT INTO book_category (theme, ISBN) VALUES ('biology', '9781476733500');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780061120080');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780078746376');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780078772375');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780316051644');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780321910417');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9780815341888');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9781585423316');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9781617316209');
+INSERT INTO book_category (theme, ISBN) VALUES ('chemistry', '9781664112940');
+INSERT INTO book_category (theme, ISBN) VALUES ('civilization', '9780078245836');
+INSERT INTO book_category (theme, ISBN) VALUES ('civilization', '9780618184787');
+INSERT INTO book_category (theme, ISBN) VALUES ('classical literature', '9780199537259');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '978054757731');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780061122415');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780140275360');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780142437315');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780571247055');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780679729821');
+INSERT INTO book_category (theme, ISBN) VALUES ('classics', '9780743273565');
+INSERT INTO book_category (theme, ISBN) VALUES ('cosmology', '9780345539434');
+INSERT INTO book_category (theme, ISBN) VALUES ('cosmology', '9780375708114');
+INSERT INTO book_category (theme, ISBN) VALUES ('cosmology', '9780393338102');
+INSERT INTO book_category (theme, ISBN) VALUES ('cosmology', '9780393609394');
+INSERT INTO book_category (theme, ISBN) VALUES ('cryptography', '9780385495325');
+INSERT INTO book_category (theme, ISBN) VALUES ('diary', '9780553296983');
+INSERT INTO book_category (theme, ISBN) VALUES ('economics', '9780078021756');
+INSERT INTO book_category (theme, ISBN) VALUES ('ecosystem', '9781771642484');
+INSERT INTO book_category (theme, ISBN) VALUES ('ecosystems', '978013401127');
+INSERT INTO book_category (theme, ISBN) VALUES ('ecosystems', '9781305076516');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '978047089452');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780038026756');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780078021756');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780078245836');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780078745607');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780078746376');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780078772375');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780131481930');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '978013401127');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780134065455');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780205309023');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780312256866');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780316322409');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780321869111');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780321910417');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780521189064');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780618184787');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9780804125840');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9781269944090');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9781305076516');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9781337091213');
+INSERT INTO book_category (theme, ISBN) VALUES ('education', '9781337555724');
+INSERT INTO book_category (theme, ISBN) VALUES ('engineering', '9780131481930');
+INSERT INTO book_category (theme, ISBN) VALUES ('engineering', '9781476733500');
+INSERT INTO book_category (theme, ISBN) VALUES ('epic', '978054757731');
+INSERT INTO book_category (theme, ISBN) VALUES ('epic', '9780140275360');
+INSERT INTO book_category (theme, ISBN) VALUES ('Ethics', '978014044929');
+INSERT INTO book_category (theme, ISBN) VALUES ('Ethics', '9780140449334');
+INSERT INTO book_category (theme, ISBN) VALUES ('Ethics', '9780140449491');
+INSERT INTO book_category (theme, ISBN) VALUES ('Ethics', '9781451624457');
+INSERT INTO book_category (theme, ISBN) VALUES ('existentialism', '9780140441185');
+INSERT INTO book_category (theme, ISBN) VALUES ('feminism', '9780060732592');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '978006025665');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '978006028075');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780061122415');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780142402511');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780142407332');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780439023528');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780451524935');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780525478812');
+INSERT INTO book_category (theme, ISBN) VALUES ('fiction', '9780743273565');
+INSERT INTO book_category (theme, ISBN) VALUES ('food', '9780143036531');
+INSERT INTO book_category (theme, ISBN) VALUES ('french language', '9780038026756');
+INSERT INTO book_category (theme, ISBN) VALUES ('genetics', '9780134065455');
+INSERT INTO book_category (theme, ISBN) VALUES ('genetics', '9781269944090');
+INSERT INTO book_category (theme, ISBN) VALUES ('genetics', '9781401952471');
+INSERT INTO book_category (theme, ISBN) VALUES ('genetics', '9781402785856');
+INSERT INTO book_category (theme, ISBN) VALUES ('genetics', '9781476733500');
+INSERT INTO book_category (theme, ISBN) VALUES ('geography', '9780078245836');
+INSERT INTO book_category (theme, ISBN) VALUES ('geography', '9780078745607');
+INSERT INTO book_category (theme, ISBN) VALUES ('geometry', '978069115514');
+INSERT INTO book_category (theme, ISBN) VALUES ('geometry', '9780199129593');
+INSERT INTO book_category (theme, ISBN) VALUES ('geometry', '9780691155142');
+INSERT INTO book_category (theme, ISBN) VALUES ('grammar', '9780205309023');
+INSERT INTO book_category (theme, ISBN) VALUES ('grammar', '9780521189064');
+INSERT INTO book_category (theme, ISBN) VALUES ('greek history', '9780199537563');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9781593080174');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780060838652');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780062316097');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780199537563');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780316322409');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780345476098');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780374530716');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780385495325');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780547577098');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780553296983');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780618184787');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9780714833552');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9781454918479');
+INSERT INTO book_category (theme, ISBN) VALUES ('history', '9781585423316');
+INSERT INTO book_category (theme, ISBN) VALUES ('imagination', '978006025665');
+INSERT INTO book_category (theme, ISBN) VALUES ('imagination', '9780439023528');
+INSERT INTO book_category (theme, ISBN) VALUES ('language learning', '9780038026756');
+INSERT INTO book_category (theme, ISBN) VALUES ('language learning', '9780205309023');
+INSERT INTO book_category (theme, ISBN) VALUES ('language learning', '9780521189064');
+INSERT INTO book_category (theme, ISBN) VALUES ('literature', '9780312256866');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780060750503');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780062509598');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780141198975');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780142402511');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780199537532');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780395566111');
+INSERT INTO book_category (theme, ISBN) VALUES ('love', '9780525478812');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematical proofs', '978069115514');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematical proofs', '9780691155142');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '978047089452');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '978069115514');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780071315012');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780199129593');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780691118802');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780691155142');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780801048371');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9780980232776');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9781285741550');
+INSERT INTO book_category (theme, ISBN) VALUES ('mathematics', '9781782946335');
+INSERT INTO book_category (theme, ISBN) VALUES ('medical', '9781402785856');
+INSERT INTO book_category (theme, ISBN) VALUES ('modernism', '9780142437315');
+INSERT INTO book_category (theme, ISBN) VALUES ('modernism', '9780571247055');
+INSERT INTO book_category (theme, ISBN) VALUES ('modernism', '9780679729821');
+INSERT INTO book_category (theme, ISBN) VALUES ('molecules', '9780815341888');
+INSERT INTO book_category (theme, ISBN) VALUES ('mythology', '978054757731');
+INSERT INTO book_category (theme, ISBN) VALUES ('mythology', '9780140275360');
+INSERT INTO book_category (theme, ISBN) VALUES ('mythology', '9780192833753');
+INSERT INTO book_category (theme, ISBN) VALUES ('mythology', '9780199537259');
+INSERT INTO book_category (theme, ISBN) VALUES ('nature', '9780316184137');
+INSERT INTO book_category (theme, ISBN) VALUES ('nature', '9781771642484');
+INSERT INTO book_category (theme, ISBN) VALUES ('neurology', '9781402785856');
+INSERT INTO book_category (theme, ISBN) VALUES ('Non-fiction', '9780143036531');
+INSERT INTO book_category (theme, ISBN) VALUES ('Non-fiction', '9780199537563');
+INSERT INTO book_category (theme, ISBN) VALUES ('Non-fiction', '9781451624457');
+INSERT INTO book_category (theme, ISBN) VALUES ('Non-fiction', '9781455510185');
+INSERT INTO book_category (theme, ISBN) VALUES ('Novel', '978006028075');
+INSERT INTO book_category (theme, ISBN) VALUES ('Novel', '9780374530716');
+INSERT INTO book_category (theme, ISBN) VALUES ('Novel', '9780385751063');
+INSERT INTO book_category (theme, ISBN) VALUES ('pharmacology', '9781402785856');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '978014044929');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9780140443161');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '978014044929');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9780140449334');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9780140449491');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9780199537532');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9780374530716');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9781454918479');
+INSERT INTO book_category (theme, ISBN) VALUES ('philosophy', '9781593080174');
+INSERT INTO book_category (theme, ISBN) VALUES ('phycology', '9780140441185');
+INSERT INTO book_category (theme, ISBN) VALUES ('phycology', '9781337555724');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780321869111');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780345539434');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780375708114');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780393338102');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780393609394');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9780804125840');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9781108422161');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9781402778612');
+INSERT INTO book_category (theme, ISBN) VALUES ('physics', '9781617316209');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780060732592');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780060750503');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780062509598');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780140421996');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780141198975');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780142437315');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780192833753');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780199537259');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780316184137');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780395566111');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780571247055');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9780679729821');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9781449474256');
+INSERT INTO book_category (theme, ISBN) VALUES ('poetry', '9781449486792');
+INSERT INTO book_category (theme, ISBN) VALUES ('political fiction', '9780451524935');
+INSERT INTO book_category (theme, ISBN) VALUES ('political fiction', '9780451532152');
+INSERT INTO book_category (theme, ISBN) VALUES ('politics', '9780395566111');
+INSERT INTO book_category (theme, ISBN) VALUES ('politics', '9781337091213');
+INSERT INTO book_category (theme, ISBN) VALUES ('romance', '9780142402511');
+INSERT INTO book_category (theme, ISBN) VALUES ('romance', '9780525478812');
+INSERT INTO book_category (theme, ISBN) VALUES ('satire', '9780451532152');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780061120080');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780062316097');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780071315012');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780078746376');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780131481930');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '978013401127');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780134065455');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780316051644');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780321869111');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780321910417');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780375708114');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780385495325');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780393338102');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780691118802');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9780980232776');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781108422161');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781269944090');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781285741550');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781305076516');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781402778612');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781402785856');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781451624457');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781476733500');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781617316209');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781664112940');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781771642484');
+INSERT INTO book_category (theme, ISBN) VALUES ('science', '9781782946335');
+INSERT INTO book_category (theme, ISBN) VALUES ('science fiction', '9780451524935');
+INSERT INTO book_category (theme, ISBN) VALUES ('self-help', '9781449486792');
+INSERT INTO book_category (theme, ISBN) VALUES ('self-help', '9781594480003');
+INSERT INTO book_category (theme, ISBN) VALUES ('self-reflection', '9780140449334');
+INSERT INTO book_category (theme, ISBN) VALUES ('social', '9780060838652');
+INSERT INTO book_category (theme, ISBN) VALUES ('spirituality', '9780060750503');
+INSERT INTO book_category (theme, ISBN) VALUES ('spirituality', '9780062509598');
+INSERT INTO book_category (theme, ISBN) VALUES ('spirituality', '9781594480003');
+INSERT INTO book_category (theme, ISBN) VALUES ('stoicism', '9780140443161');
+INSERT INTO book_category (theme, ISBN) VALUES ('stoicism', '9780140449334');
+INSERT INTO book_category (theme, ISBN) VALUES ('strategy', '9781593080174');
+INSERT INTO book_category (theme, ISBN) VALUES ('supernatural', '9780141198975');
+INSERT INTO book_category (theme, ISBN) VALUES ('sustainability', '9780131481930');
+INSERT INTO book_category (theme, ISBN) VALUES ('sustainability', '978013401127');
+INSERT INTO book_category (theme, ISBN) VALUES ('sustainability', '9781305076516');
+INSERT INTO book_category (theme, ISBN) VALUES ('trigonometry', '9780199129593');
+INSERT INTO book_category (theme, ISBN) VALUES ('war', '9780345476098');
+INSERT INTO book_category (theme, ISBN) VALUES ('war', '9780547577098');
+INSERT INTO book_category (theme, ISBN) VALUES ('war', '9780553296983');
+INSERT INTO book_category (theme, ISBN) VALUES ('writing', '9780205309023');
+
+
+INSERT INTO users (ID, Username, Password, school_name, num_of_borrows, num_of_reserves, approve_user_registration, approve_borrowing, approve_reservation, role, active, date_of_birth, first_name, last_name, approve_student_review)
+VALUES
+(7, 'vivian', '123', '18o Gel Triandrias', 0, 2, 1, 0, NULL, 'student', 1, '2006-10-26', 'Vivian', 'Thanou', NULL),
+(8, 'kostas', '234', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2005-04-05', 'Konstadinos', 'Dalabekis', NULL),
+(9, 'giorgos', '345', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2007-09-07', 'Giorgos', 'Sabanis', NULL),
+(10, 'gwgw', '567', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2006-01-02', 'Georgia', 'Tsaleza', NULL),
+(11, 'helen', '456', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2006-03-27', 'Eleni', 'Papadopoulou', NULL),
+(12, 'xristos', '001', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2005-02-02', 'Xristos', 'Spiliotopoulos', NULL),
+(13, 'nikos', '222', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'teacher', 1, '1980-09-09', 'Nikolaos', 'Kapeleris', NULL),
+(14, 'tonia', '333', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'teacher', 1, '1995-11-11', 'Antonia', 'Andreou', NULL),
+(15, 'vasw', '098', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2006-10-26', 'vasiliki', 'Mparakakou', NULL),
+(16, 'tasos', '234', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2002-02-22', 'Anastasis', 'Politis', NULL),
+(17, 'lia', '608', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2008-08-09', 'Apostolia', 'Sketzou', NULL),
+(18, 'yro', '555', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2010-01-03', 'Argyrw', 'Samiotaki', NULL);
+(19, 'paris', '783', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2009-09-08', 'Paris', 'Petropoulos', NULL),
+(20, 'eva', '888', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2010-03-04', 'Evaggelia', 'Kourouni', NULL),
+(21, 'pavlos', '002', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'student', 1, '2010-10-10', 'Pavlos', 'Xristodoulou', NULL),
+(22, 'george', '898', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'teacher', 1, '1998-02-22', 'Giorgos', 'Andresakis', NULL),
+(23, 'olga', '999', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'teacher', 1, '1990-01-02', 'Olga', 'Nika', NULL),
+(24, 'nasia', '777', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2008-09-08', 'Athanasia', 'Kissa', NULL),
+(25, 'soti', '719', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'teacher', 1, '1999-01-06', 'Sotiria', 'Sabani', NULL),
+(26, 'elena', '828', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2006-11-15', 'Helen', 'Sabani', NULL),
+(27, 'lefteris', '123456', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2007-09-09', 'Lefteris', 'Sabanis', NULL),
+(28, 'konstadina', '8765', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'teacher', 1, '1980-09-08', 'Konstadina', 'Pappa', NULL);
+(29, 'fep', '876', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2006-11-09', 'Paraskevi', 'Thanou', NULL);
+(30, 'danae', '609', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2005-08-09', 'Danae', 'Metaxaki', NULL);
+(31, 'maria', '987', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2005-11-23', 'Maria', 'Sabani', NULL);
+(32, 'ntinos', '533', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'teacher', 1, '1989-01-02', 'Konstadinos', 'Piliouris', NULL);
+(33, 'emily', '2345', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2007-08-09', 'Emily', 'Johnson', NULL);
+(34, 'ntina', '6543', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2004-02-03', 'Konstadina', 'Papadopoulou', NULL);
+(35, 'vovian', '3456', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2005-04-05', 'Vivian', 'Triadafilou', NULL);
+(36, 'petros', '432', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2007-01-03', 'Petros', 'Piliouris', NULL),
+(37, 'sotiria', '54321', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'teacher', 1, '1969-09-08', 'Sotiria', 'Bekri', NULL),
+(38, 'mike', '777', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2008-02-02', 'Mihalis', 'Tzouvelekis', NULL),
+(39, 'panos', '543', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2006-09-02', 'Panagiotis', 'Manaras', NULL),
+(40, 'aris', '54321', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'teacher', 1, '2000-07-02', 'Aris', 'Sabanis', NULL),
+(41, 'gkouf', '34567', '1o Gel Halandriou', 0, 0, 1, NULL, NULL, 'student', 1, '2007-09-08', 'Giorgos', 'Goufas', NULL),
+(42, 'anna_kar', '275', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'teacher', 1, '1995-02-01', 'Anna', 'Karagouni', NULL),
+(43, 'timos', '385', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', 1, '2005-01-02', 'Meletios', 'Ginis', NULL),
+(44, 'stav', '345', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'teacher', 1, '1975-09-02', 'Stavroula', 'Katzarou', NULL),
+(45, 'tzo', '583', '7o Gymnasio Haniwn', 0, 0, 1, NULL, NULL, 'teacher', 1, '1998-09-08', 'Tzortzina', 'Katzarou', NULL),
+(46, 'd_dagla', '673', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', 1, '2006-09-08', 'Dimitra', 'Dagla', NULL),
+(47, 'mar_sik', '34567', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'teacher', 1, '1985-09-08', 'Marialena', 'Sikioti', NULL),
+(48, 'annak', '345678', '18o Gel Triandrias', 0, 0, 1, NULL, NULL, 'student', NULL, '2007-07-08', 'Anna', 'Karamanliki', NULL),
+(49, 'eleni_kar', '519', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', NULL, '2006-01-02', 'Eleni', 'Karagiannh', NULL),
+(50, 'than_faria', '5234', '2o Gel Thivas', 0, 0, 1, NULL, NULL, 'student', NULL, '2006-02-06', 'Thanasis', 'Gomez De Faria', NULL);
+
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(8,'9781782946335','2022-12-31','2023-01-30','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(8,'9781402778612','2022-12-31','2023-01-30','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(14,'9780140275360','2023-01-01','2023-01-06','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(14,'9780199537563','2023-02-02','2023-02-06','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(14,'9781455510185','2023-03-15','2023-03-21','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(14,'9781782946335','2023-03-15','2023-03-21','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(22,'9781449486792','2023-01-01','2023-01-06','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(22,'9781449474256','2023-02-02','2023-02-06','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(22,'9780199537259','2023-03-15','2023-03-21','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(22,'9780140421996','2023-03-15','2023-03-21','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(22,'9780062316097','2023-05-04','2023-05-25','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(37,'9780316322409','2022-12-12','2022-12-18','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(37,'9781337555724','2022-12-18','2022-12-22','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(40,'9780078021756','2023-03-01','2023-03-07','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(40,'9781593080174','2023-07-04','2023-13-04','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(33,'9780395566111','2023-05-02','2023-05-30','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(33,'9780078745607','2022-11-12','2022-11-18','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(50,'9780078746376','2021-12-18','2021-12-22','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(50,'9780345539434','2021-09-06','2021-09-10','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(50,'9780393338102','2023-07-03','2023-13-03','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(42,'9780140449491','2020-08-09','2020-08-15','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(45,'9780199537532','2022-10-09','2022-10-15','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(33,'9780553296983','2020-04-27','2020-05-15','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(47,'978013401127','2023-04-27','2023-05-01','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(13,'9780140449491','2019-09-28','2019-10-01','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(12,'9781664112940','2020-09-30','2022-10-05','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(12,'9781401952471','2018-30-09','2018-02-10','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(40,'9780714833552','2023-02-01','2022-01-15','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(24,'9780060750503','2022-06-07','2018-06-13','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(24,'9780815341888','2022-06-07','2018-06-13','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(25,'9780316184137','2023-05-07','2018-05-13','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(41,'978047089452','2023-02-07','2018-02-10','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(41,'9780071315012','2023-02-07','2023-02-12','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(32,'9780071315012','2022-01-07','2022-02-10','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(32,'9781771642484','2021-01-07','2021-02-10','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(39,'9781771642484','2020-11-07','2020-11-29','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(49,'9780316322409','2022-11-07','2022-11-17','delayed');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(50,'978013401127','2022-08-30','2022-09-5','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(50,'9780062509598','2023-04-27','2023-05-01','returned');
+INSERT INTO borrowing(ID,ISBN,date_of_borrow,date_of_return,situation) VALUES(24,'9781108422161','2023-04-27','2023-05-01','returned');
+INSERT INTO borrowing (ID, ISBN,date_of_borrow,date_of_return,situation) VALUES (33,'9780038026756','2023-06-04',NULL,'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (33, '9780312256866', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (36, '9780393338102', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (36, '9781476733500', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (38, '9780393338102', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (38, '9780395566111', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (43, '9780062509598', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (43, '9780078746376', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (47, '9780385751063', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (50, '9780078745607', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (50, '9780321869111', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (34, '9780078746376', '2023-06-04', NULL, 'borrowed');
+INSERT INTO borrowing (ID, ISBN, date_of_borrow, date_of_return, situation) VALUES (34, '978013401127', '2023-06-04', NULL, 'borrowed');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (33, '978013401127', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (33, '9781771642484', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (34, '9780714833552', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (34, '9781771642484', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (35, '9780547577098', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (35, '9781476733500', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (36, '9780078746376', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (36, '9780078745607', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (37, '9781401952471', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (38, '9780553296983', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (38, '9780714833552', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (24, '9780618184787', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (24, '9781585423316', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (25, '9780141198975', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (25, '9780691118802', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (28, '9781108422161', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (28, '9780134065455', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (29, '978013401127', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (30, '9781285741550', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (30, '9780071315012', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (7, '9780143036531', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (8, '9780140275360', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (10, '9781782946335', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (10, '9781454918479', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (12, '9781782946335', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (12, '9780451532152', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (14, '9781594480003', '2023-06-04'); 
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (44, '9780374530716', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (48, '9780192833753', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (15, '9780375708114', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (15, '9780439023528', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (16, '9780199537259', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (16, '9780078772375', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (17, '9780801048371', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (18, '9780199537532', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (19, '9780525478812', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (19, '9780804125840', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (20, '9781617316209', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (20, '9780199537532', '2023-06-04');
+INSERT INTO reservation(ID, ISBN, date_of_reservation) VALUES (21, '9780140421996', '2023-06-04');
