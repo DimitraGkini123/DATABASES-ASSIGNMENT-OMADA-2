@@ -23,12 +23,12 @@
             {% for user in users %}
                 <tr>
                     <td>{{ user[0] }}</td>
+                    <td>{{ user[12] }}</td>
                     <td>{{ user[13] }}</td>
-                    <td>{{ user[14] }}</td>
                     <td>{{ user[3] }}</td>
                     <td>{{ user[1] }}</td>
-                    <td>{{ user[12] }}</td>
-                    <td>{{ user[10] }}</td>
+                    <td>{{ user[11] }}</td>
+                    <td>{{ user[9] }}</td>
                     <td>
                         <form action="/approve_user/{{ user[3] }}/{{ user[1] }}" method="POST">
                             <input type="hidden" name="action" value="approve">

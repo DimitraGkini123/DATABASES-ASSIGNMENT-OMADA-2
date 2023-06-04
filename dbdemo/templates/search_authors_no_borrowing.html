@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <a href="{{ url_for('process_login') }}" class="link-back">Back</a>
     <form  action="/search_authors_no_borrowing"></form>
     {% if authors %}
     <h2>Authors That None Of Their Books Have Been Borrowed</h2>

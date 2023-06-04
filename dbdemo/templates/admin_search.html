@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <a href="{{ url_for('process_login') }}" class="link-back">Back</a>
     <form method="POST" action="/search_with_category">
     {% if authors %}
     <h2>Results for the category of your request</h2>

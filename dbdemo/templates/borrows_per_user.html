@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Borrows Per User</title>
+    <title>Borrows per Users</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
+ 
     {% if users %}
     <table>
         <thead>
             <tr>
                 <th>User ID</th>
+                <th>Username</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Role</th>
                 <th>ISBN</th>
-                <th>Title</th>
                 <th>Date of borrow</th>
                 <th>Situation</th>
             </tr>

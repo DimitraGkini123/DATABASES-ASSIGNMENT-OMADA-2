@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <a href="{{ url_for('process_login') }}" class="link-back">Back</a>
     {% if borrows %}
     <h2>Borrows Per School</h2>
     

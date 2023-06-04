@@ -9,7 +9,6 @@
         <div class="navbar_account">
         <div class="icon">
             <h2 class="logo">biblioTECH</h2>
-            <a href="{{ url_for('index') }}" class="link-back">Back</a>
         </div>
 
             <div class="menu">
@@ -19,14 +18,12 @@
                         <li><a href="/user_approvals">User Approvals</a></li>
                         <li><a href="/add_book">Add Book</a></li>
                         <li><a href="/manager">My Account</a></li>
-                        <li><a href="/borrowing_approvals">Borrowing And Return Approvals</a></li>
+                        <li><a href="/borrowing_approvals">Borrowing Approvals/Return Registrations</a></li>
                         <li><a href="/reservation_approvals">Reservation Approvals</a></li>
                         <li><a href="/review_approvals">Review Approvals</a></li>
                     </ul>
                 </form>
             </div>
-
-
             
             <div class="search-container">
                 <p class="search-text">Enter the details below to search for books :</p>
@@ -48,9 +45,33 @@
                 </form>
             </div>
 
+            <div class="search-container">
+                <p class="search-text">Enter the details below to search for average rating of user :</p>
+        
+                <form action="/manager_average_rating" method="post" class="search-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" >
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" placeholder="Enter category" >
+            
+                <button type="submit">Search</button>
+                </form>
+            </div>
 
             <div class="search-container">
-                <p class="search-text">Enter the details below to search for books :</p>
+                <p class="search-text">Enter the details below to see the borrows for every user :</p>
+        
+                <form action="/borrows_per_user" method="post" class="search-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" >
+            
+                <button type="submit">Search</button>
+                </form>
+            </div>
+            
+            <div class="search-container">
+                <p class="search-text">Enter the details below to search for users with delayed books :</p>
         
                 <form action="/user_with_delayed_book" method="post" class="search-form">
                 <label for="first_name">First Name:</label>
@@ -64,7 +85,9 @@
             
                 <button type="submit">Search</button>
                 </form>
-            </div>
+          </div>
+
+
             
         </div>
         
